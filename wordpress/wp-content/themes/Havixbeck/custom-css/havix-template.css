@@ -1,0 +1,38 @@
+
+.text-justify{
+    text-align: justify;
+}
+img{
+    
+    max-width:100%;
+    height: auto;
+    
+}
+
+.navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+    background: #000;
+}
+
+.header{
+    background-image: url("assets/images/header-page.png");
+}
+.latest-post img{
+
+    max-width: 620px;
+    max-height: 370px;
+    width:100%;
+    height: auto;
+}
+
+a{
+    font-family: 'Lora',serif;
+}
+p,h1,h2,h3,h4,h5,h6,span{
+
+    font-family: 'Lato',sans-serif;
+
+}

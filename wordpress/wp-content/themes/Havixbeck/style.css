@@ -9,13 +9,18 @@ Tags: responsive, white, bootstrap, musik, jugend
 
 This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
 */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
+@import url('custom-css/havix-template.css');
 @import url('bootstrap/css/bootstrap.css');
-@import url('bootstrap/css/bootstrap-responsive.css');
 
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
-body{ background-color: red;}
+body{
+    background-color: red;
+
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 786px ) and (max-width: 991px ) {
     body{ background-color: blue;}
@@ -28,5 +33,6 @@ body{ background-color: green;}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    body{ background-color: grey;}
+    body{ background-color: white;}
+
 }
