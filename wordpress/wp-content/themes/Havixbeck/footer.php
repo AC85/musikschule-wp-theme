@@ -1,7 +1,7 @@
 <hr>
 
 <footer>
-    <p>© Hochschule Düsseldorf Entwicklung - 2015</p>
+    <p>© Hochschule Düsseldorf Entwicklung - 2015 sdfghjk</p>
 </footer>
 
 </div> <!-- /container -->
