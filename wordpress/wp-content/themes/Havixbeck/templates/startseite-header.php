@@ -22,18 +22,11 @@
 <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
 
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="row">
-            <div class="col-lg-5 logoarea">
 
-                <a href="<?php echo home_url(); ?>">
-                    <img id="main-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png">
-                </a>
-            </div>
-        </div>
-        <!-- row -->
+
 
         <div class="navbar-header">
+
             <button type="button" class="navbar-toggle" data-toggle="collapse"
                     data-target="#collapse-menu">
                 <span class="sr-only">Toggle navigation</span>
@@ -41,8 +34,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-        </div>
 
+
+        </div>
+        <div class="row">
+        <div class="col-lg-2">
+        <a href="<?php echo home_url(); ?>">
+            <img id="main-logo-start" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-black.png">
+        </a>
+        </div>
 
         <?php
         wp_nav_menu(array(
@@ -50,14 +50,15 @@
                 'theme_location' => 'primary',
                 'depth' => 2,
                 'container' => 'div',
-                'container_class' => 'collapse navbar-collapse',
+                'container_class' => 'collapse navbar-collapse col-lg-12',
                 'container_id' => 'collapse-menu',
-                'menu_class' => 'nav  nav-justified ',
+                'menu_class' => 'nav navbar-nav nav-justified-main ',
                 'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
                 'walker' => new wp_bootstrap_navwalker())
         );
         ?>
 
+        </div>
     </div>
 </nav>
-<div class="container">
+<div class="container-fluid">

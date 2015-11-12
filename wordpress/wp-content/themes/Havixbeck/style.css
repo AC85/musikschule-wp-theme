@@ -17,22 +17,30 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
-body{
-    background-color: red;
 
-}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 786px ) and (max-width: 991px ) {
-    body{ background-color: blue;}
+    .nav{
+
+        margin-left: 10%;
+        margin-right: auto;
+
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px ) {
-body{ background-color: green;}
+
+    .nav{
+
+        margin-left: 10%;
+        margin-right: auto;
+
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    body{ background-color: white;}
+
 
 }

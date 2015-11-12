@@ -1,38 +1,87 @@
 
-.text-justify{
-    text-align: justify;
-}
-img{
-    
-    max-width:100%;
-    height: auto;
-    
-}
-
-.navbar-nav{
+.navbar-nav {
     margin: 0 auto;
-    display: table;
     table-layout: fixed;
-    float:none;
-    background: #000;
+    float: none;
+    text-align:center;
+}
+.navbar{
+    background-color:#FFFFFF !important
+}
+.navbar a{
+    color:black;
+}
+.navbar a:hover{
+    text-decoration: none;
+    color:black;
+}
+.navbar a:visited{
+    color:black;
 }
 
-.header{
-    background-image: url("assets/images/header-page.png");
-}
-.latest-post img{
+
+.latest-post img {
 
     max-width: 620px;
     max-height: 370px;
-    width:100%;
+    width: 100%;
     height: auto;
 }
 
-a{
-    font-family: 'Lora',serif;
+/* ***************
+Allgemeine Stileinstellungen
+**************** */
+a {
+    font-family: 'Lora', serif;
 }
-p,h1,h2,h3,h4,h5,h6,span{
 
-    font-family: 'Lato',sans-serif;
+p, h1, h2, h3, h4, h5, h6, span {
+
+    font-family: 'Lato', sans-serif;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+img {
+
+    max-width: 100%;
+    height: auto;
+}
+
+/* ***************
+Navigationsleiste
+**************** */
+
+.logoarea {
+
+    background-image: url("../assets/images/header-shape.png");
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+#main-logo {
+    margin:30px 0px 0px 150px;
+    max-width: 100%;
+    width: 95px;
+    height: auto;
+}
+#main-logo-start {
+    margin:0px 0px 0px 8%;
+    max-width: 100%;
+    width: 95px;
+    height: auto;
+    float:left;
+}
+.navbar-nav.nav-justified > li{
+    float:none;
+}
+.nav-justified{
+    margin: 10px 0px;
+    padding: 0px 8% 15px 8% !important;
+}
+.navbar-nav{
 
 }
+

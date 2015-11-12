@@ -22,6 +22,16 @@ function new_excerpt_more( $more ) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+require_once('wp_bootstrap_navwalker.php');
 
 add_theme_support( 'post-thumbnails' );
+
+function mytheme_setup() {
+
+    register_nav_menus( array(
+        'primary' => __( 'Primary Menu', 'Havixbeck' ),
+    ) );
+
+}
+add_action( 'after_setup_theme', 'mytheme_setup' );
 ?>
