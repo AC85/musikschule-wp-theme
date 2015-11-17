@@ -1,10 +1,10 @@
-<hr>
+</div> <!-- /container -->
 
 <footer>
-    <p>© Hochschule Düsseldorf Entwicklung - 2015 sdfghjk</p>
+    <p>© Hochschule Düsseldorf Entwicklung - 2015</p>
 </footer>
 
-</div> <!-- /container -->
+
 
 <?php wp_footer(); ?>
 

@@ -10,4 +10,3 @@
 
 
 
-<?php get_footer(); ?>
