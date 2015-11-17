@@ -18,7 +18,9 @@
 			</div>
 
 			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+			<div class="text-justify">
 			<?php the_excerpt(); ?>
+			</div>
 			<a href="<?php echo get_permalink(); ?>"> Mehr lesen...</a>
 
 		</div>

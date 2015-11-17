@@ -6,7 +6,8 @@
     text-align:center;
 }
 .navbar{
-    background-color:#FFFFFF !important
+    background-color:#FFFFFF !important;
+
 }
 .navbar a{
     color:black;
@@ -100,5 +101,8 @@ Navigationsleiste
 
     margin-bottom: 15px;
 
+}
+.page-image-top{
+    margin-top: -20px;
 }
 
