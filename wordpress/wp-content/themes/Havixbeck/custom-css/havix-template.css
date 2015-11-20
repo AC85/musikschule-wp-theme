@@ -86,16 +86,6 @@ Navigationsleiste
     height: auto;
     float:left;
 }
-.navbar-nav.nav-justified > li{
-    float:none;
-}
-.nav-justified{
-    margin: 10px 0px;
-    padding: 0px 8% 15px 8% !important;
-}
-.navbar-nav{
-
-}
 
 .page-title{
 
@@ -105,4 +95,45 @@ Navigationsleiste
 .page-image-top{
     margin-top: -20px;
 }
+.navbar-nav.nav-justified > li{
+    float:none;
+}
+.nav-justified{
+    margin: 10px 0px;
+    padding: 0 8% 0 8% !important;
+}
 
+
+
+.navigationsleiste  {
+    display: inline-block;
+    position: relative;
+    padding: 3px 10px 3px 0;
+    z-index: 100;
+}
+
+/* SECOND LEVEL */
+.navigationsleiste > ul > li > ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 0 1000em; /* trick from css-tricks comments */
+    margin: 0 -1000em; /* trick from css-tricks comments */
+    z-index: 101;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+
+}
+
+.navigationsleiste > ul > li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navigationsleiste > ul > li > ul > li {
+    padding: 15px 0;
+}
+
+.navigationsleiste > ul > li:hover .drop {
+    font-weight: bold;}

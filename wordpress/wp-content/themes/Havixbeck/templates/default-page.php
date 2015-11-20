@@ -2,7 +2,7 @@
 
 
         <?php if (has_post_thumbnail()) {
-           _e('<div class="imagecrop">');
+           _e('<div class="imagecrop page-image-top">');
             the_post_thumbnail();
             _e('</div>');
         } ?>

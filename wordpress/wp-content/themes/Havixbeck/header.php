@@ -44,19 +44,23 @@
         </div>
 
 
-        <?php
-        wp_nav_menu(array(
+
+
+
+                <?php
+                wp_nav_menu( array(
                 'menu' => 'primary',
                 'theme_location' => 'primary',
-                'depth' => 2,
-                'container' => 'div',
+                'depth' => 0,
+                'container' => 'nav',
                 'container_class' => 'collapse navbar-collapse',
                 'container_id' => 'collapse-menu',
-                'menu_class' => 'nav  nav-justified ',
+                'menu_class' => 'nav  nav-justified',
                 'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-                'walker' => new wp_bootstrap_navwalker())
-        );
-        ?>
+                        'walker' => new wp_bootstrap_navwalker())
+                );
+?>
+
 
     </div>
 </nav>
