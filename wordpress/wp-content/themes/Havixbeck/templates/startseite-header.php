@@ -17,34 +17,23 @@
     <?php wp_head(); ?>
 </head>
 <body>
-
-<!-- container-fluid -->
-<nav class="navbar navbar-default" role="navigation">
+   <nav class="navbar navbar-default">
     <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="<?php echo home_url(); ?>"></a>
+        <p id="headertitle">Jugendorchester Havixbeck e.V.</p>
+      </div>
 
-
-
-
-        <div class="navbar-header">
-
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#collapse-menu">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-
-        </div>
-        <div class="row">
-        <div class="col-lg-2">
-        <a href="<?php echo home_url(); ?>">
-            <img id="main-logo-start" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-black.png">
-        </a>
-        </div>
-
-        <?php
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <?php
         wp_nav_menu(array(
                 'menu' => 'primary',
                 'theme_location' => 'primary',
@@ -58,7 +47,8 @@
         );
         ?>
 
-        </div>
-    </div>
-</nav>
-<div class="container-fluid">
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+<!-- container-fluid -->
+<div class="container">
