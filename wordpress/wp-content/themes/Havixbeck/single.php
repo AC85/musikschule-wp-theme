@@ -47,7 +47,7 @@
 
 <?php endwhile;
 else: ?>
-    <p><?php _e('Sorry, this page does not exist.'); ?></p>
+    <p><?php _e('Sorry, this page does nooot exist.'); ?></p>
 <?php endif; ?>
 
 

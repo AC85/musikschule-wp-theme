@@ -32,13 +32,13 @@
 /* ***************
 Allgemeine Stileinstellungen
 **************** */
-a, h1, h2, h3, h4, h5, h6{
-    font-family: 'Lora', serif !important;
+body, a, h1, h2, h3, h4, h5, h6{
+    font-family: 'AW Conqueror Didot', serif !important;
 }
 
-p,  span {
+p,  span, a, li {
 
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 .text-justify {
@@ -60,6 +60,10 @@ img {
     width: 100%;
     height: auto;
     position: center;
+}
+
+.breadcrumb{
+    background-color: white !important;
 }
 
 /* ***************
@@ -114,7 +118,7 @@ Navigationsleiste
 
 /* SECOND LEVEL */
 .navigationsleiste > ul > li > ul {
-    position: absolute;
+    position: relative;
     left: 0;
     top: 100%;
     padding: 0 1000em; /* trick from css-tricks comments */
@@ -137,3 +141,16 @@ Navigationsleiste
 
 .navigationsleiste > ul > li:hover .drop {
     font-weight: bold;}
+
+/****
+Detailsseite
+***/
+.acf-small-cat{
+    font-weight: 600;
+}
+
+.details-header{
+    font-family: 'Raleway'!important;
+    font-weight:400;
+    font-size: 25pt;
+}
