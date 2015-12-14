@@ -136,6 +136,13 @@ Detailsseite
     font-size: 25pt;
 
 }
+
+/*
+Anmeldung und Angebot
+*/
+.sub-angebot{
+    font-size: 20pt;
+}
 /*FBE*/
 /*
 .nav-justified > .dropdown:hover .dropdown-menu{

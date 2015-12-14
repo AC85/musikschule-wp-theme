@@ -1,3 +1,5 @@
+</div>
+<div class="container-fluid">
 <div class="breadcrumbs"> <?php if (function_exists('nav_breadcrumb')) nav_breadcrumb(); ?> </div>
 </div><!-- container-fluid -->
 <div class="container">
@@ -26,7 +28,7 @@
 
             <?php while (have_posts()) : the_post(); ?>
 
-                <h2>
+                <h2 class="sub-angebot">
                     <?php if (!(is_page("Angebot"))) the_title(); ?>
                 </h2>
                 <p>
