@@ -130,7 +130,7 @@
                                 <!-- Linke Seite -->
                                 <div class="col-md-3 acf-small-cat">
                                     <p>
-                                    Fach
+                                    Instrument
                                     </p>
                                 </div>
 
@@ -155,6 +155,45 @@
                         </div>
                         <?php endif; ?>
 
+                        <!-- ******** Ensemble ********  -->
+
+                        <?php
+
+						$locations = get_field('dozenten_ensemble');
+
+						?>
+                        <?php
+                         if($locations):
+                         ?>
+
+                            <div class="row">
+                                <!-- Linke Seite -->
+                                <div class="col-md-3 acf-small-cat">
+                                    <p>
+                                    Ensemble
+                                    </p>
+                                </div>
+
+                                <!-- Rechte Seite -->
+                                <div class="col-md-9">
+
+
+						<?php if( $locations ): ?>
+
+							<?php foreach( $locations as $location ): ?>
+
+									<a href="<?php echo get_permalink( $location); ?>">
+										<?php echo get_the_title( $location ); ?><br>
+									</a>
+
+							<?php endforeach; ?>
+
+						<?php endif; ?>
+
+
+                            </div>
+                        </div>
+                        <?php endif; ?>
 
                         <!-- ******** Links ********  -->
                         <?php
@@ -191,5 +230,6 @@
         </div>
 
     </div>
+</div>
 
-<?php the_footer(); ?>
+<?php get_footer() ?>

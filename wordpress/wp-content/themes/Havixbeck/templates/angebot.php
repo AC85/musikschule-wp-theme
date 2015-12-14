@@ -83,6 +83,39 @@
 
 
                 } ?>
+                <!-- ****************************************************************
+                            Ensembles
+                 ****************************************************************-->
+                <?php if ((is_page("Ensembles"))) {
+                    $args = array('post_type' => 'Ensembles', 'orderby' => 'title', 'order' => 'ASC');
+                    $loop = new WP_Query($args);
+                    while ($loop->have_posts()) : $loop->the_post();
+
+                        ?>
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
+                        <?php
+
+                    endwhile;
+
+
+                } ?>
+
+                <!-- ****************************************************************
+                            Elementarausbildung
+                 ****************************************************************-->
+                <?php if ((is_page("Elementarausbildung"))) {
+                    $args = array('post_type' => 'Elementarausbildung', 'orderby' => 'title', 'order' => 'ASC');
+                    $loop = new WP_Query($args);
+                    while ($loop->have_posts()) : $loop->the_post();
+
+                        ?>
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
+                        <?php
+
+                    endwhile;
+
+
+                } ?>
 
 
             <?php endwhile; // end of the loop. ?>

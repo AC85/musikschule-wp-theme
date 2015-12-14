@@ -11,16 +11,18 @@
 Allgemeine Stileinstellungen
 **************** */
 
-body, a, h1, h2, h3, h4, h5, h6{
-    font-family: 'AW Conqueror Didot', serif !important;}
-
-
-p,  span, a, li {
-
-
-    font-family: 'Raleway', sans-serif !important;
-
+h1, h2, h3, h4, h5, h6{
+    font-family: 'AW Conqueror Didot', serif !important;
 }
+
+a,li {
+    color: #00aeef;
+}
+
+body, p,  span, a, li {
+    font-family: 'Raleway', sans-serif !important;
+}
+
 
 .text-justify {
     text-align: justify;
@@ -45,6 +47,11 @@ img {
 
 .breadcrumb{
     background-color: white !important;
+}
+
+#menu-left{
+    list-style-type: none;
+    padding-left: 0;
 }
 
 /* ***************

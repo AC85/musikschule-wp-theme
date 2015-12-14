@@ -187,7 +187,29 @@ function create_post_type() {
                 'singular_name' => __( 'Faecher' )),
             'public' => true,
             'has_archive' => true,
-            'rewrite' => array('slug' => 'faecher')
+            'rewrite' => array('slug' => '/musikschule/angebot/faecher','with_front' => FALSE)
+
+        )
+    );
+    register_post_type( 'Ensembles',
+        array(
+            'labels' => array(
+                'name' => __( 'Ensembles' ),
+                'singular_name' => __( 'Ensembles' )),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => '/musikschule/angebot/ensembles','with_front' => FALSE)
+
+        )
+    );
+    register_post_type( 'Elementarausbildung',
+        array(
+            'labels' => array(
+                'name' => __( 'Elementarausbildung' ),
+                'singular_name' => __( 'Elementarausbildung' )),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => '/musikschule/angebot/elementarausbildung','with_front' => FALSE)
 
         )
     );

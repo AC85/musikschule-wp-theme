@@ -41,10 +41,10 @@
                             <!-- ******** Bild & Content ********  -->
                             <!-- Linke Seite -->
                             <div class="col-md-3">
-                            <?php $instrument_bild = get_field( "instrument_bild" );
-                               if($instrument_bild != null): ?>
+                            <?php $dozenten_bild = get_field( "elar_bild" );
+                               if($dozenten_bild != null): ?>
 
-                                <img src="<?php the_field('instrument_bild'); ?>"/>
+                                <img src="<?php the_field('elar_bild'); ?>"/>
 
                             <?php endif; ?>
                             </div>
@@ -59,11 +59,11 @@
                         </div>
 
                         <!-- ****************************************
-                        Unterrichtsschwerpunkte
+                        Unterrichtsform
                         **************************************** -->
                         <?php
 
-                         $instrument_unterrichtsschwerpunkte = get_field( "instrument_unterrichtsschwerpunkte" );
+                         $instrument_unterrichtsschwerpunkte = get_field( "elar_unterrichtsform" );
 
                          if($instrument_unterrichtsschwerpunkte != null):
 
@@ -72,7 +72,7 @@
                             <!-- Linke Seite -->
                             <div class="col-md-3 acf-small-cat">
                                 <p>
-                                    Unterrichtsschwerpunkte
+                                    Unterrichtsform
                                 </p>
 
                             </div>
@@ -80,94 +80,77 @@
                             <!-- Rechte Seite -->
                             <div class="col-md-9">
                                 <p>
-                                    <?php the_field('instrument_unterrichtsschwerpunkte'); ?>
+                                    <?php the_field('elar_unterrichtsform'); ?>
                                 </p>
 
                             </div>
                         </div>
 
                         <?php endif; ?>
-
-                        <!-- ******** Unterrichtsform ********  -->
+                        <!-- ****************************************
+                        Unterrichtsform
+                        **************************************** -->
                         <?php
 
-                         $instrument_unterrichtsform = get_field( "instrument_unterrichtsform" );
+                         $instrument_unterrichtsschwerpunkte = get_field( "elar_unterrichtseinheit" );
 
-                         if($instrument_unterrichtsform != null):
+                         if($instrument_unterrichtsschwerpunkte != null):
 
                          ?>
                         <div class="row">
                             <!-- Linke Seite -->
                             <div class="col-md-3 acf-small-cat">
                                 <p>
-                                Unterrichtsform
+                                    Unterrichtseinheiten
                                 </p>
+
                             </div>
 
                             <!-- Rechte Seite -->
                             <div class="col-md-9">
                                 <p>
-                                <?php the_field('instrument_unterrichtsform'); ?>
+                                    <?php the_field('elar_unterrichtseinheit'); ?>
                                 </p>
+
                             </div>
                         </div>
+
                         <?php endif; ?>
 
-                        <!-- ******** Unterrichtseinheiten ********  -->
+                        <!-- ****************************************
+                        Alter
+                        **************************************** -->
                         <?php
 
-                         $instrument_unterrichtseinheiten = get_field( "instrument_unterrichtseinheiten" );
+                         $instrument_unterrichtsschwerpunkte = get_field( "elar_alter" );
 
-                         if($instrument_unterrichtseinheiten != null):
+                         if($instrument_unterrichtsschwerpunkte != null):
 
                          ?>
                         <div class="row">
                             <!-- Linke Seite -->
                             <div class="col-md-3 acf-small-cat">
                                 <p>
-                                Unterrichtseinheit
+                                    Alter
                                 </p>
+
                             </div>
 
                             <!-- Rechte Seite -->
                             <div class="col-md-9">
                                 <p>
-                                <?php the_field('instrument_unterrichtseinheiten'); ?>
+                                    <?php the_field('elar_alter'); ?>
                                 </p>
+
                             </div>
                         </div>
+
                         <?php endif; ?>
-
-                        <!-- ******** Fächer ********  -->
-                        <?php
-
-                         $instrument_ergaenzende_facher = get_field( "instrument_ergaenzende_facher" );
-
-                         if($instrument_ergaenzende_facher != null):
-
-                         ?>
-                        <div class="row">
-                            <!-- Linke Seite -->
-                            <div class="col-md-3 acf-small-cat">
-                                <p>
-                                Ergänzende Fächer
-                                </p>
-                            </div>
-
-                            <!-- Rechte Seite -->
-                            <div class="col-md-9">
-                                <p>
-                                <?php the_field('instrument_ergaenzende_facher'); ?>
-                                </p>
-                            </div>
-                        </div>
-                        <?php endif; ?>
-
                         <!-- ******** Dozenten ********  -->
 
                         <?php
 
-						$locations = get_field('instrument_by_dozenten');
+						$locations = get_field('elar_dozent');
 
 						?>
                         <?php
@@ -178,7 +161,7 @@
                                 <!-- Linke Seite -->
                                 <div class="col-md-3 acf-small-cat">
                                     <p>
-                                    Dozenten
+                                    Dozent
                                     </p>
                                 </div>
 
@@ -204,32 +187,7 @@
                         <?php endif; ?>
 
 
-                        <!-- ******** Links ********  -->
-                        <?php
 
-                         $instrument_links = get_field( "instrument_links" );
-
-                         if($instrument_links != null):
-
-                         ?>
-                        <div class="row">
-                            <!-- Linke Seite -->
-                            <div class="col-md-3 acf-small-cat">
-                                <p>
-                                Links
-                                </p>
-                            </div>
-
-                            <!-- Rechte Seite -->
-                            <div class="col-md-9">
-                                <p>
-                                <?php the_field('instrument_links'); ?>
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <?php endif; ?>
 
                 <?php endwhile; // end of the loop. ?>
 
@@ -239,7 +197,6 @@
         </div>
 
     </div>
-
 </div>
 
 <?php get_footer() ?>
