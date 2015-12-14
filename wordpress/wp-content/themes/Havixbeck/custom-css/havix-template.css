@@ -10,22 +10,16 @@
 /* ***************
 Allgemeine Stileinstellungen
 **************** */
-<<<<<<< HEAD
+
 body, a, h1, h2, h3, h4, h5, h6{
-    font-family: 'AW Conqueror Didot', serif !important;
-=======
-a, h1, h2, h3, h4, h5, h6{
-    font-family: 'Lora', serif ;
->>>>>>> Header
-}
+    font-family: 'AW Conqueror Didot', serif !important;}
+
 
 p,  span, a, li {
 
-<<<<<<< HEAD
+
     font-family: 'Raleway', sans-serif !important;
-=======
-    font-family: 'Lato', sans-serif ;
->>>>>>> Header
+
 }
 
 .text-justify {
@@ -140,11 +134,8 @@ Detailsseite
     font-family: 'Raleway'!important;
     font-weight:400;
     font-size: 25pt;
+
 }
-=======
-    font-weight: bold;
-}
-*/
 /*FBE*/
 /*
 .nav-justified > .dropdown:hover .dropdown-menu{
@@ -234,7 +225,7 @@ nav #headertitle{
     font-size:42px;
     width:100%;
     text-align:center;
-    font-family: 'AW Conqueror Didot', serif;
+    font-family: 'AW Conqueror Didot', serif !important;
 }
 
 nav .navbar-collapse{
@@ -311,4 +302,4 @@ nav .navbar-nav>li:hover>.dropdown-menu{
 }
 
 /*/FBE*/
->>>>>>> Header
+
