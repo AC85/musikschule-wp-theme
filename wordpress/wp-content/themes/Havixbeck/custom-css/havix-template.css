@@ -1,26 +1,4 @@
 
-.navbar-nav {
-    margin: 0 auto;
-    table-layout: fixed;
-    float: none;
-    text-align:center;
-}
-.navbar{
-    background-color:#FFFFFF !important;
-
-}
-.navbar a{
-    color:black;
-}
-.navbar a:hover{
-    text-decoration: none;
-    color:black;
-}
-.navbar a:visited{
-    color:black;
-}
-
-
 .latest-post img {
 
     max-width: 620px;
@@ -32,13 +10,22 @@
 /* ***************
 Allgemeine Stileinstellungen
 **************** */
+<<<<<<< HEAD
 body, a, h1, h2, h3, h4, h5, h6{
     font-family: 'AW Conqueror Didot', serif !important;
+=======
+a, h1, h2, h3, h4, h5, h6{
+    font-family: 'Lora', serif ;
+>>>>>>> Header
 }
 
 p,  span, a, li {
 
+<<<<<<< HEAD
     font-family: 'Raleway', sans-serif !important;
+=======
+    font-family: 'Lato', sans-serif ;
+>>>>>>> Header
 }
 
 .text-justify {
@@ -46,13 +33,13 @@ p,  span, a, li {
 }
 
 img {
-
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
 .imagecrop{
     width: 100%;
-    height: 450px !important;
+    height: 450px;
     overflow: hidden;
 }
 .imagecrop img{
@@ -69,7 +56,7 @@ img {
 /* ***************
 Navigationsleiste
 **************** */
-
+/*
 .logoarea {
 
     background-image: url("../assets/images/header-shape.png");
@@ -115,19 +102,18 @@ Navigationsleiste
     padding: 3px 10px 3px 0;
     z-index: 100;
 }
-
-/* SECOND LEVEL */
+*//*
+/* SECOND LEVEL *//*
 .navigationsleiste > ul > li > ul {
     position: relative;
     left: 0;
     top: 100%;
     padding: 0 1000em; /* trick from css-tricks comments */
-    margin: 0 -1000em; /* trick from css-tricks comments */
-    z-index: 101;
+   /* margin: 0 -1000em; /* trick from css-tricks comments */
+  /*  z-index: 101;
     visibility: hidden;
     opacity: 0;
     text-align: center;
-
 }
 
 .navigationsleiste > ul > li:hover > ul {
@@ -140,6 +126,7 @@ Navigationsleiste
 }
 
 .navigationsleiste > ul > li:hover .drop {
+<<<<<<< HEAD
     font-weight: bold;}
 
 /****
@@ -154,3 +141,174 @@ Detailsseite
     font-weight:400;
     font-size: 25pt;
 }
+=======
+    font-weight: bold;
+}
+*/
+/*FBE*/
+/*
+.nav-justified > .dropdown:hover .dropdown-menu{
+    margin:0;
+    padding:0;
+}
+
+.nav-justified > .dropdown .dropdown-menu{
+    margin:0 auto;
+    border:0;
+    border-radius:0;
+    border-top:1px solid #efefef;
+    /*margin-left: -50%;*/
+   /* -webkit-box-shadow:none;
+    box-shadow:none;
+}*/
+
+/*#collapse-menu{
+    background-color: #fff; 
+}
+
+.navbar.navbar-default{
+    border:0;
+    border-radius: 0;
+}
+
+.nav-justified > li {
+    border-bottom: 1px solid #efefef;
+}
+
+.dropdown .dropdown-menu > li.menu-item {
+        padding: 10px 15px;
+        margin:0 4%;
+}
+.dropdown .dropdown-menu > li.menu-item:hover{
+    cursor:pointer;
+}
+
+.dropdown .dropdown-menu > li.menu-item > a {
+    clear: initial;
+    display: initial; 
+    padding: 0; 
+    clear: initial; 
+    font-weight: initial; 
+    line-height:inherit; 
+    color: #333; 
+    white-space: initial
+}
+
+.dropdown .dropdown-menu > li.menu-item:hover > a{
+    text-decoration: underline;
+    background-color: #fff;
+
+}
+
+.navbar #collapse-menu .current_page_item {
+    background-color: #efefef;
+}
+
+.affix{
+    top:0;
+    padding-right:15px;
+}
+
+#fixpos{
+    margin-bottom:-51px;
+    z-index: 1;
+}
+
+body > .container-fluid {
+    margin-top: 51px;
+}*/
+
+
+/*FBE*/
+nav .navbar-header{
+    width: 100%;
+    border-bottom:1px solid #333;
+    padding: 6px 0;
+}
+
+nav.navbar-default .container-fluid{
+    padding:0;
+}
+
+nav #headertitle{
+    font-size:42px;
+    width:100%;
+    text-align:center;
+    font-family: 'AW Conqueror Didot', serif;
+}
+
+nav .navbar-collapse{
+    width:100%;
+    padding:0;
+    text-align: center;
+    float:left;
+    border-bottom:1px solid #333;
+}
+
+nav.navbar>.container-fluid .navbar-brand{
+    position:absolute;
+    margin:0;
+    width: 80px;
+    height: 65px;
+    background-image: url("../assets/images/logo_figure.png");
+    background-size: 80px 65px;
+    background-color: #fff;
+}
+
+nav .navbar-collapse > ul > li{
+    float:none;
+    display:inline-block;
+}
+
+nav .navbar-nav{
+    float:none;
+}
+
+body nav.navbar {
+    background-color: #000;
+    border:0;
+    color:#fff;
+    border-radius: 0;
+}
+
+body nav.navbar a,
+nav.navbar-default .navbar-brand,
+nav.navbar-default .navbar-nav>li>a{
+    color:#999;
+    font-size: 17px;
+    font-family: 'Raleway', Arial;
+}
+
+nav.navbar-default .navbar-nav>li>a:focus, 
+nav.navbar-default .navbar-nav>li>a:hover{
+    color:#fff;
+}
+
+nav.navbar-default .navbar-nav>.active>a,
+nav.navbar-default .navbar-nav>.active>a:focus,
+nav.navbar-default .navbar-nav>.active>a:hover,
+nav.navbar-default .navbar-nav>.open>a, 
+nav.navbar-default .navbar-nav>.open>a:focus, 
+nav.navbar-default .navbar-nav>.open>a:hover{
+    color:#fff;
+    background-color: #000;
+}
+
+nav .dropdown-menu{
+    background-color: #000;
+    border:0;
+    border-radius: 0;
+}
+
+nav .dropdown-menu>li>a:focus, 
+nav .dropdown-menu>li>a:hover{
+    color:#fff;
+    background-color: #000;
+}
+
+nav .navbar-nav>li:hover>.dropdown-menu{
+    display: block;
+}
+
+/*/FBE*/
+>>>>>>> Header
