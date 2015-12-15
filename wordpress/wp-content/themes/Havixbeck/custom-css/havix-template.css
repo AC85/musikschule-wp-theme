@@ -54,9 +54,69 @@ img {
     padding-left: 0;
 }
 
-/* ***************
-Navigationsleiste
-**************** */
+#menu-anmeldung{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/*
+Detailsseite Elementarausbildung
+*/
+
+.full-width-image-align{
+    padding:0 !important;
+}
+.full-width-image-on-top{
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.full-width-image-on-top img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 600px;
+}
+.elar_beschreibung{
+    padding-bottom: 3em;
+}
+
+.instrument_cat_elem {
+    padding-bottom: 3em;
+}
+.instrument_cat{
+    font-weight: 600;
+}
+.content{
+    padding-bottom: 3em;
+}
+
+.menu-left-container li{
+    padding-bottom: 1em;
+}
+
+.menu-left-container li a:active{
+    text-decoration: underline;
+}
+.menu-left-container li a:hover{
+    text-decoration: none;
+}
+
+.menu-anmeldung-container li{
+    padding-bottom: 1em;
+}
+.menu-anmeldung-container li a:active{
+    text-decoration: underline;
+}
+.menu-anmeldung-container li a:hover{
+    text-decoration: none;
+}
+
+
+    /* ***************
+    Navigationsleiste
+    **************** */
 /*
 .logoarea {
 
@@ -247,7 +307,7 @@ nav .navbar-collapse{
     padding:0;
     text-align: center;
     float:left;
-    border-bottom:1px solid #333;
+    border-bottom:0px solid #000;
 }
 
 nav.navbar>.container-fluid .navbar-brand{
@@ -274,6 +334,8 @@ body nav.navbar {
     border:0;
     color:#fff;
     border-radius: 0;
+    margin-bottom: 0px;
+    border-image-width: 0;
 }
 
 body nav.navbar a,
@@ -282,6 +344,7 @@ nav.navbar-default .navbar-nav>li>a{
     color:#999;
     font-size: 17px;
     font-family: 'Raleway', Arial;
+
 }
 
 nav.navbar-default .navbar-nav>li>a:focus, 
@@ -314,6 +377,7 @@ nav .dropdown-menu>li>a:hover{
 nav .navbar-nav>li:hover>.dropdown-menu{
     display: block;
 }
+
 
 /*/FBE*/
 

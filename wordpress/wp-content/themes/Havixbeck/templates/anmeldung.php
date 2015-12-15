@@ -1,4 +1,10 @@
-<div class="breadcrumbs"> <?php if (function_exists('nav_breadcrumb')) nav_breadcrumb(); ?> </div>
+</div>
+<div class="container-fluid full-width-image-align">
+    <div class="full-width-image-on-top">
+        <img src="<?php echo get_template_directory_uri();?>/assets/images/on-top-image.jpg" >
+
+    </div>
+    <div class="breadcrumbs"> <?php if (function_exists('nav_breadcrumb')) nav_breadcrumb(); ?> </div>
 </div><!-- container-fluid -->
 <div class="container">
 
@@ -6,7 +12,7 @@
     <div class="row">
 
         <!-- Side navigation -->
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
 
             <h2>Anmeldung</h2>
             <?php
@@ -22,7 +28,7 @@
         </div>
 
         <!-- Content Area -->
-        <div class="col-md-9">
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
 
             <?php while (have_posts()) : the_post(); ?>
 

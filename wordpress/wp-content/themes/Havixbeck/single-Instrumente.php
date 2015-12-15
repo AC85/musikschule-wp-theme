@@ -1,8 +1,12 @@
 <?php get_header(); ?>
 </div>
-<div class="container-fluid">
-<div class="breadcrumbs"> <?php if (function_exists('nav_breadcrumb')) nav_breadcrumb(); ?> </div>
-</div>
+<div class="container-fluid full-width-image-align">
+    <div class="full-width-image-on-top">
+        <img src="<?php echo get_template_directory_uri();?>/assets/images/on-top-image.jpg" >
+
+    </div>
+    <div class="breadcrumbs"> <?php if (function_exists('nav_breadcrumb')) nav_breadcrumb(); ?> </div>
+</div><!-- container-fluid -->
 <div class="container">
     <div class="row">
 

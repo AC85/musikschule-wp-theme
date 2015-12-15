@@ -2,7 +2,7 @@
 
 function nav_breadcrumb() {
 
-    $delimiter = '&raquo;';
+    $delimiter = '&nbsp;>&nbsp;';
     $home = 'Startseite ';
     $before = '<span class="current-page">';
     $after = '</span>';
