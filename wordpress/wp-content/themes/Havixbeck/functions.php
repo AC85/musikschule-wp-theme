@@ -217,6 +217,16 @@ function create_post_type() {
 add_action( 'init', 'create_post_type', 0 );
 flush_rewrite_rules();
 
+function wpfstop_change_default_title( $title ){
+    $screen = get_current_screen();
+    if ( 'dozenten' == $screen->post_type ){
+        $title = 'Nachname, Vorname';
+    }
+    return $title;
+}
+add_filter( 'enter_title_here', 'wpfstop_change_default_title' );
+?>
+
 
 
 ?>
