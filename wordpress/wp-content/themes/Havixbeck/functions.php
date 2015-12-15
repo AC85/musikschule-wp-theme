@@ -225,7 +225,7 @@ function wpfstop_change_default_title( $title ){
     return $title;
 }
 add_filter( 'enter_title_here', 'wpfstop_change_default_title' );
-?>
+
 
 
 
