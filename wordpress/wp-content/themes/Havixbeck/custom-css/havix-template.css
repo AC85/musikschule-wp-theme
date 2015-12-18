@@ -59,6 +59,13 @@ img {
     padding-left: 0;
 }
 
+.box-link{
+    width: 250px;
+    background-color: #00b9eb;
+    height: 150px;
+    margin: 0 15px 0 0;
+}
+
 /*
 Detailsseite Elementarausbildung
 */

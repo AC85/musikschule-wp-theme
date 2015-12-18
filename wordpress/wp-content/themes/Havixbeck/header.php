@@ -52,5 +52,3 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-<!-- container-fluid -->
-<div class="container">

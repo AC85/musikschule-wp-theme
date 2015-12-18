@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-</div>
 <div class="container-fluid">
     <div class="row page-image-top">
 

@@ -1,6 +1,3 @@
-
-
-</div>
 <div class="container-fluid full-width-image-align">
     <div class="full-width-image-on-top">
         <img src="<?php echo get_template_directory_uri();?>/assets/images/on-top-image.jpg" >

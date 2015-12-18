@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-</div>
 <div class="container-fluid">
 <div class="breadcrumbs"> <?php if (function_exists('nav_breadcrumb')) nav_breadcrumb(); ?> </div>
 </div>
