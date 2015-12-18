@@ -406,6 +406,7 @@ Foooooter
 .footer a:hover{
 	text-decoration: none;
 	color: white;
+	text-shadow: 0px 0px 20px yellow;
 }
 .footer a{
 	font-family: 'Raleway'!important;
