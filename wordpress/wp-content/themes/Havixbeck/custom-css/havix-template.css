@@ -408,19 +408,27 @@ Foooooter
 	color: white;
 }
 .footer a{
-	font-family: 'Lato', sans-serif !important;
+	font-family: 'Raleway'!important;
+	font-weight:400;
 	color: #a09fa2;
-	line-height: 200%;
 }
 .footer h3 {
-	font-family: 'Lora', serif !important;
+	font-family: 'AW Conqueror Didot', serif !important;
+
 	color: #ebe8f1;
 	font-size: 20pt;
 }
 
-.footer p, span{
-    font-family: 'Lato', sans-serif !important;
+.footer p{
+    font-family: 'Raleway'!important;
+    font-weight:500;
     color: #a09fa2;
+}
+.footer span{
+	font-family: 'Raleway'!important;
+    font-weight:400;
+    color: #6e6d71;
+    line-height: 250%;
 }
 .footer-bottom{
 	border-top: 1px solid #38393b;
@@ -437,7 +445,7 @@ Foooooter
 #footer-sm {
 	width: auto;
 	height: 25px;
-	margin-right: 5px;
-	margin-left: 5px;
+	margin-left: 10px;
 }
+
 

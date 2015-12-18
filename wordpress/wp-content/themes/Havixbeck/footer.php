@@ -116,8 +116,8 @@
 								<a href="https://www.youtube.com/user/JugendorchesterHav">
 				                	<img id="footer-sm" src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube_logo.png">
 				            	</a>
-				        </p>
-			    		<p>© Hochschule Düsseldorf Entwicklung - 2015</p>
+						</p>
+			    		<span>© Hochschule Düsseldorf Entwicklung - 2015</span>
 					</div>
 				</div>
 				
