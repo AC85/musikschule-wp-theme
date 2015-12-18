@@ -109,9 +109,14 @@
 						</div>
 					</div>
 					<div class="footer-bottom">
-						<p> Folge uns: </p>
-						
-						<br>
+						<p> Folge uns: 
+								<a href="https://www.facebook.com/JugendorchesterHavixbeck/">
+				                	<img id="footer-sm" src="<?php echo get_template_directory_uri(); ?>/assets/images/fb_logo.png">
+				            	</a>
+								<a href="https://www.youtube.com/user/JugendorchesterHav">
+				                	<img id="footer-sm" src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube_logo.png">
+				            	</a>
+				        </p>
 			    		<p>© Hochschule Düsseldorf Entwicklung - 2015</p>
 					</div>
 				</div>

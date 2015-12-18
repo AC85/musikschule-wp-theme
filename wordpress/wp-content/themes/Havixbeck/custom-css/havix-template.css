@@ -425,7 +425,7 @@ Foooooter
 .footer-bottom{
 	border-top: 1px solid #38393b;
 	text-align: center;
-	padding: 10px;
+	padding: 20px;
 	
 }
 #footer-logo {
@@ -433,5 +433,11 @@ Foooooter
 	width: 95px;
     height: auto;
     margin: 20px;
+}
+#footer-sm {
+	width: auto;
+	height: 25px;
+	margin-right: 5px;
+	margin-left: 5px;
 }
 
