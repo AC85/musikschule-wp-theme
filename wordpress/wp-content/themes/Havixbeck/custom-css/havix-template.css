@@ -415,6 +415,7 @@ Foooooter
 }
 .footer h3 {
 	font-family: 'AW Conqueror Didot', serif !important;
+	line-height: 150%;
 
 	color: #ebe8f1;
 	font-size: 20pt;
@@ -430,6 +431,7 @@ Foooooter
     font-weight:400;
     color: #6e6d71;
     line-height: 250%;
+    padding-left: 50px;
 }
 .footer-bottom{
 	border-top: 1px solid #38393b;
@@ -446,7 +448,7 @@ Foooooter
 #footer-sm {
 	width: auto;
 	height: 25px;
-	margin-left: 10px;
+	margin-left: 15px;
 }
 
 

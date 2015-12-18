@@ -46,13 +46,13 @@
 									<!--<p>Termin</p>
 									<p>Archiv</p>-->
 									<?php
-										getChildLinksByTitle('Verein');
+										getChildLinksByTitle('Aktuelles');
 									?>
 								<h3>VEREIN</h3>
 									<!--<p>Organisation</p>
 									<p>Förderer</p>-->
 									<?php
-										getChildLinksByTitle('Aktuelles');
+										getChildLinksByTitle('Verein');
 									?>
 							</div>
 							
@@ -109,15 +109,15 @@
 						</div>
 					</div>
 					<div class="footer-bottom">
-						<p> Folge uns: 
+						<p> FOLGE UNS: 
 								<a href="https://www.facebook.com/JugendorchesterHavixbeck/">
 				                	<img id="footer-sm" src="<?php echo get_template_directory_uri(); ?>/assets/images/fb_logo.png">
 				            	</a>
 								<a href="https://www.youtube.com/user/JugendorchesterHav">
 				                	<img id="footer-sm" src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube_logo.png">
 				            	</a>
-						</p>
-			    		<span>© Hochschule Düsseldorf Entwicklung - 2015</span>
+								<span>© Hochschule Düsseldorf Entwicklung - 2015</span>
+			    		</p>
 					</div>
 				</div>
 				
