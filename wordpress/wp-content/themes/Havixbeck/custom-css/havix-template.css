@@ -380,4 +380,51 @@ nav .navbar-nav>li:hover>.dropdown-menu{
 
 
 /*/FBE*/
+/************************
+Foooooter
+************************/
+
+.footer {
+	width: 100%;
+    /*height: 400px;*/
+    background: #101011;
+    height: auto;
+}
+.footer-content{
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+}
+.footer a:hover{
+	text-decoration: none;
+	color: white;
+}
+.footer a{
+	font-family: 'Lato', sans-serif !important;
+	color: #a09fa2;
+	line-height: 200%;
+}
+.footer h3 {
+	font-family: 'Lora', serif !important;
+	color: #ebe8f1;
+	font-size: 20pt;
+}
+
+.footer p, span{
+    font-family: 'Lato', sans-serif !important;
+    color: #a09fa2;
+}
+.footer-bottom{
+	border-top: 1px solid #38393b;
+	text-align: center;
+	padding: 10px;
+	
+}
+#footer-logo {
+	max-width: 50%;
+	width: 95px;
+    height: auto;
+    margin: 20px;
+}
 
