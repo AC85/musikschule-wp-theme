@@ -54,7 +54,7 @@
         <?php }?>
 
 
-    </div>
+
 
 <?php endwhile;
 else: ?>

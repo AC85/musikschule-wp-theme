@@ -32,7 +32,7 @@
 				}
 				
 			?>
-			<div  class="container-fluid" class="footer">
+
 				<div class="footer">
 					<div class="footer-content">
 						<div class="row">
@@ -116,7 +116,7 @@
 					</div>
 				</div>
 				
-			</div>
+			
 		</footer>
 		
 		
