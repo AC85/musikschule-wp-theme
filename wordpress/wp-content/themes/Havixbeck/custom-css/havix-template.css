@@ -51,6 +51,10 @@ img {
     position: center;
 }
 
+.padding-bottom-15{
+    padding-bottom: 15px;
+}
+
 .breadcrumb {
     background-color: white !important;
 }
@@ -78,11 +82,19 @@ body .box-link-container {
     overflow: hidden;
 
 }
+.box-link img{
+    transition: all 0.3s ease-in-out;
+}
+.box-link img:hover{
+    transform: scale(1.1);
+}
 
 .box-link-image {
     height: auto;
     width: 100%;
 }
+
+
 
 .box-link-text {
     position: absolute;
@@ -99,6 +111,13 @@ body .box-link-container {
     font-weight: 400;
     font-size: 14pt;
 
+}
+.grey-bg{
+    background-color: #fafafa;
+}
+.light-grey-background {
+    padding: 5% 0 5% 0;
+    background-color: #f2f2f2;
 }
 
 /*
@@ -138,23 +157,19 @@ Detailsseite Elementarausbildung
     padding-bottom: 3em;
 }
 
-.menu-left-container li, .menu-anmeldung-container li {
+.menu-left-container li, .menu-anmeldung-container li ,#menu-anmeldung li{
     padding-bottom: 1em;
 }
 
-.menu-left-container li a:active, .menu-anmeldung-container li a:active {
+.menu-left-container li a:active, .menu-anmeldung-container li a:active, #menu-anmeldung li a:active {
     text-decoration: underline;
 }
 
-.menu-left-container li a:hover, .menu-anmeldung-container li a:hover {
+.menu-left-container li a:hover, .menu-anmeldung-container li a:hover ,#menu-anmeldung li a:hover{
     text-decoration: none;
 }
 
-.light-grey-background {
-    padding: 5% 0 5% 0;
-    margin-bottom: 5%;
-    background-color: #f2f2f2;
-}
+
 
 /****
 Detailsseite
