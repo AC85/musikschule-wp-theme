@@ -1,3 +1,9 @@
 .tribe-events-single{
-    background-color: transparent;
+    background-color: black;
+}
+.events-page{
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
 }
