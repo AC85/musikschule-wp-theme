@@ -13,6 +13,10 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 } ?>
+<div class="full-width-image-on-top">
+    <img src="<?php echo get_template_directory_uri();?>/assets/images/on-top-image.jpg" >
+
+</div>
 
 <div class="events-page">
 	<div id="tribe-events-content" class="tribe-events-list">
