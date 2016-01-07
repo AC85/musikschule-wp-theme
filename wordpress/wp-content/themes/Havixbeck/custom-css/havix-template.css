@@ -302,6 +302,18 @@ nav #headertitle{
     font-family: 'AW Conqueror Didot', serif !important;
 }
 
+@media(max-width: 690px){
+    nav #headertitle{
+        font-size:30px;
+    }
+}
+
+@media(max-width: 380px){
+    nav #headertitle{
+        font-size:20px;
+    }
+}
+
 nav .navbar-collapse{
     width:100%;
     padding:0;
@@ -320,13 +332,30 @@ nav.navbar>.container-fluid .navbar-brand{
     background-color: #fff;
 }
 
+@media (max-width: 768px){
+    nav.navbar>.container-fluid .navbar-brand{
+        position:relative;
+    }
+}
+
 nav .navbar-collapse > ul > li{
     float:none;
     display:inline-block;
 }
 
+nav .navbar-collapse.in ul li{
+    width: 100%;
+    text-align: left;
+}
+
+nav .navbar-collapse.in ul li ul{
+    position: relative;
+    margin-left: 20%;
+}
+
 nav .navbar-nav{
     float:none;
+    margin:0;
 }
 
 body nav.navbar {
@@ -378,6 +407,40 @@ nav .navbar-nav>li:hover>.dropdown-menu{
     display: block;
 }
 
+nav .collapse.in,
+nav .collapse.in #collapse-menu{
+    display:block;
+}
+
+nav .container > .navbar-header, 
+nav .container-fluid > .navbar-header,
+nav .container > .navbar-collapse,
+nav .container-fluid > .navbar-collapse{
+    margin:0;
+}
+nav .collapse{
+    border:0;
+    box-shadow:none;
+}
+
+nav #menu-primary li.current-menu-item > a,
+nav #menu-primary li.current-menu-parent > a{
+    color:#fff;
+    background-color: inherit;
+}
+
+nav.navbar-default .navbar-toggle{
+    border-color: #999;
+}
+
+nav.navbar-default .navbar-toggle:hover{
+    border-color: #fff;
+    background-color: #000;
+}
+
+nav.navbar-default .navbar-toggle:hover .icon-bar{
+    background-color: #fff;
+}
 
 /*/FBE*/
 
