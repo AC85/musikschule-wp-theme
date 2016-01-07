@@ -51,7 +51,7 @@ img {
     position: center;
 }
 
-.padding-bottom-15{
+.padding-bottom-15 {
     padding-bottom: 15px;
 }
 
@@ -82,10 +82,12 @@ body .box-link-container {
     overflow: hidden;
 
 }
-.box-link img{
+
+.box-link img {
     transition: all 0.3s ease-in-out;
 }
-.box-link img:hover{
+
+.box-link img:hover {
     transform: scale(1.1);
 }
 
@@ -93,8 +95,6 @@ body .box-link-container {
     height: auto;
     width: 100%;
 }
-
-
 
 .box-link-text {
     position: absolute;
@@ -112,9 +112,11 @@ body .box-link-container {
     font-size: 14pt;
 
 }
-.grey-bg{
+
+.grey-bg {
     background-color: #fafafa;
 }
+
 .light-grey-background {
     padding: 5% 0 5% 0;
     background-color: #f2f2f2;
@@ -157,7 +159,7 @@ Detailsseite Elementarausbildung
     padding-bottom: 3em;
 }
 
-.menu-left-container li, .menu-anmeldung-container li ,#menu-anmeldung li{
+.menu-left-container li, .menu-anmeldung-container li, #menu-anmeldung li {
     padding-bottom: 1em;
 }
 
@@ -165,11 +167,9 @@ Detailsseite Elementarausbildung
     text-decoration: underline;
 }
 
-.menu-left-container li a:hover, .menu-anmeldung-container li a:hover ,#menu-anmeldung li a:hover{
+.menu-left-container li a:hover, .menu-anmeldung-container li a:hover, #menu-anmeldung li a:hover {
     text-decoration: none;
 }
-
-
 
 /****
 Detailsseite
@@ -285,6 +285,23 @@ nav #headertitle {
 nav .navbar-collapse {
     width: 100%;
     padding: 0;
+}
+
+@media (max-width: 690px) {
+    nav #headertitle {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 380px) {
+    nav #headertitle {
+        font-size: 20px;
+    }
+}
+
+nav .navbar-collapse {
+    width: 100%;
+    padding: 0;
     text-align: center;
     float: left;
     border-bottom: 0px solid #000;
@@ -307,6 +324,32 @@ nav .navbar-collapse > ul > li {
 
 nav .navbar-nav {
     float: none;
+}
+
+@media (max-width: 768px) {
+    nav.navbar > .container-fluid .navbar-brand {
+        position: relative;
+    }
+}
+
+nav .navbar-collapse > ul > li {
+    float: none;
+    display: inline-block;
+}
+
+nav .navbar-collapse.in ul li {
+    width: 100%;
+    text-align: left;
+}
+
+nav .navbar-collapse.in ul li ul {
+    position: relative;
+    margin-left: 20%;
+}
+
+nav .navbar-nav {
+    float: none;
+    margin: 0;
 }
 
 body nav.navbar {
@@ -356,6 +399,42 @@ nav .dropdown-menu > li > a:hover {
 
 nav .navbar-nav > li:hover > .dropdown-menu {
     display: block;
+}
+
+nav .collapse.in,
+nav .collapse.in #collapse-menu {
+    display: block;
+}
+
+nav .container > .navbar-header,
+nav .container-fluid > .navbar-header,
+nav .container > .navbar-collapse,
+nav .container-fluid > .navbar-collapse {
+    margin: 0;
+}
+
+nav .collapse {
+    border: 0;
+    box-shadow: none;
+}
+
+nav #menu-primary li.current-menu-item > a,
+nav #menu-primary li.current-menu-parent > a {
+    color: #fff;
+    background-color: inherit;
+}
+
+nav.navbar-default .navbar-toggle {
+    border-color: #999;
+}
+
+nav.navbar-default .navbar-toggle:hover {
+    border-color: #fff;
+    background-color: #000;
+}
+
+nav.navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #fff;
 }
 
 /*/FBE*/
