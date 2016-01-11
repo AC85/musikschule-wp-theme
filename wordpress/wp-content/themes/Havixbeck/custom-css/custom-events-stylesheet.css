@@ -1,9 +1,28 @@
-.tribe-events-single{
-    background-color: black;
+.tribe-events-list-event-description tribe-events-content {
+	font-size: 30px;
+	color:red;
 }
-.events-page{
-	max-width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 30px;
+
+.tribe-events-event-cost{
+	color:red;
+}
+h2.tribe-events-list-event-title{
+	font-family: 'AW Conqueror Didot', serif !important;
+	font-size: 30px;
+	color:red;
+}
+
+.tribe-events-list-event-title h1{
+	font-family: 'AW Conqueror Didot', serif !important;
+	font-size: 30px;
+	color:red;
+}
+.tribe-event-loop h2{
+	font-family: 'AW Conqueror Didot', serif !important;
+	font-size: 30px;
+	color:red;
+}
+.tribe-events-list-separator-month{
+	text-align: center;
+	background-color: transparent;
 }

@@ -18,11 +18,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 </div>
 
+<div id="pagetitle">
+	<div class="col-md-12 text-center"><h2> Aktuelle Termine </h2></div>
+</div>
+
 <div class="events-page">
 	<div id="tribe-events-content" class="tribe-events-list">
 		<!-- List Title -->
 		<?php do_action( 'tribe_events_before_the_title' ); ?>
-		<div class="col-md-12 text-center"><h2> Aktuelle Termine </h2></div>
 		<?php do_action( 'tribe_events_after_the_title' ); ?>
 	
 		<!-- Notices -->
@@ -43,6 +46,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	
 	
 		<!-- Events Loop -->
+		
 		<?php if ( have_posts() ) : ?>
 			<?php do_action( 'tribe_events_before_loop' ); ?>
 			<?php tribe_get_template_part( 'list/loop' ) ?>
