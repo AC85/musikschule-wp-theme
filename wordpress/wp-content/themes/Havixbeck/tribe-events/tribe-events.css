@@ -28,19 +28,21 @@
 }
 .tribe-events-list-event-description tribe-events-content p{
 	font-size: 30px;
-	color:red;
+	color:#747272;
 }
 .tribe-events-venue-details{
-	color:#878787;
+	color:black;
 	font-weight: 500;
 }
 .tribe-event-schedule-details{
 	margin-top:5px;
 	margin-bottom: 12px;
 	font-weight: 500;
+	color: #434343;
 }
 
 .tribe-events-schedule h2{
 	font-weight: 500;
 	font-size: 20px;
+	color: black;
 }
