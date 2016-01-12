@@ -109,6 +109,15 @@
                     get_template_part('templates/angebot_site_parts/elementarausbildung');
                 } ?>
 
+                <!-- ****************************************************************
+                            Fächer A-Z
+                 ****************************************************************-->
+                <?php if ((is_page("Fächer A-Z"))) {
+
+
+                    get_template_part('templates/angebot_site_parts/faecher');
+                } ?>
+
 
             <?php endwhile; // end of the loop. ?>
 
