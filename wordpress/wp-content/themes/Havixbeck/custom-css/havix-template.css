@@ -151,7 +151,10 @@ Detailsseite Elementarausbildung
 .grey-overlay h4{
     text-align: center;
     width: 100%;
+    font-family: 'Raleway' !important;
+    color: black;
 }
+
 
 .full-width-image-on-top {
     height: 200px;
@@ -177,6 +180,10 @@ Detailsseite Elementarausbildung
     height: auto;
     position: relative;
 
+}
+.secondImg img{
+
+    width: auto;
 }
 
 
