@@ -1,65 +1,61 @@
 <div class="container-fluid full-width-image-align">
 
-        <?php if (has_post_thumbnail()) {
-           _e('<div class="imagecrop page-image-top">');
-            the_post_thumbnail();
-            _e('</div>');
-        } ?>
+    <?php if (has_post_thumbnail()) {
+        _e('<div class="imagecrop page-image-top">');
+        the_post_thumbnail();
+        _e('</div>');
+    } ?>
 </div>
-<div class="container">
+
+<div class="max-width-container text-center">
+    <div class="container">
 
         <div class="row">
 
-    <div class="col-lg-12 text-center page-title">
+            <div class="text-center page-title">
 
-        <h2><?php the_title(); ?></h2>
-
-    </div>
-
-</div>
-
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-
-    <div class="row">
-
-
-        <div
-            class="
-            col-lg-8 col-lg-offset-2
-            col-md-8 col-md-offset-2
-            col-sm-8 col-sm-offset-2
-            col-xs-8 col-xs-offset-2
-            text-center">
-            <?php the_content(); ?>
-        </div>
-
-        <?php if(is_page("Musikschule")){ ?>
-
-            </div><!-- container -->
-    </div>
-            <div class="container-fluid">
-
-                <div class="row box-link-container "><!-- upper - row -->
-
-                    <div class="col-lg-2 col-lg-offset-1 box-link"></div>
-                    <div class="col-lg-2 box-link"></div>
-                    <div class="col-lg-2 box-link"></div>
-                    <div class="col-lg-2 box-link"></div>
-
-                </div>
+                <h2><?php the_title(); ?></h2>
 
             </div>
+        </div>
 
-        <?php }?>
+        <?php if (have_posts()) : while (have_posts()) :
+        the_post(); ?>
 
 
+        <div class="row">
+
+
+            <div
+                class="
+            col-lg-8 col-lg-offset-2
+            col-md-8 col-md-offset-2
+            col-sm-10 col-sm-offset-1
+            col-xs-10 col-xs-offset-1
+            text-left">
+                <?php the_content(); ?>
+            </div>
+
+
+            <?php if (is_page("Musikschule")) {
+                get_template_part('templates/musikschule');
+            }
+            if (is_page("Besetzung")) {
+                //get_template_part('templates/musikschule');
+            }
+            ?>
+
+        </div><!-- row-->
+    </div><!-- container -->
+</div><!-- max-width -->
 
 
 <?php endwhile;
 else: ?>
-    <p><?php _e('Sorry, this page does not exist.'); ?></p>
+    <p><?php _e('Oops, da ist wohl was schiefgelaufen. Versuchen Sie es später nocheinmal'); ?></p>
 <?php endif; ?>
+
+<?php
 
 
 

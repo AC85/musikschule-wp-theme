@@ -14,9 +14,10 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,600);
 
+@import url('bootstrap/css/bootstrap.css');
 @import url('custom-css/havix-template.css');
 @import url('custom-css/custom-events-stylesheet.css');
-@import url('bootstrap/css/bootstrap.css');
+
 
 @font-face {
     font-family: "AW Conqueror Didot";
