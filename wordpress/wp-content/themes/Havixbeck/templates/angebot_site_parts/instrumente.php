@@ -72,7 +72,7 @@
     </div>
     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 instrument_cat_elem">
         <?php
-        $args = array('post_type' => 'Instrumente', 'posts_per_page' => 30, 'orderby' => 'title', 'order' => 'ASC');
+        $args = array('post_type' => 'Instrumente', 'posts_per_page' => 50, 'orderby' => 'title', 'order' => 'ASC');
         $loop = new WP_Query($args);
         while ($loop->have_posts()) : $loop->the_post();
 

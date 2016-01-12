@@ -1,6 +1,6 @@
 <div class="container-fluid full-width-image-align">
     <div class="full-width-image-on-top">
-        <img src="<?php echo get_template_directory_uri();?>/assets/images/on-top-image.jpg" >
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/on-top-image.jpg">
 
     </div>
     <div class="breadcrumbs"> <?php if (function_exists('nav_breadcrumb')) nav_breadcrumb(); ?> </div>
@@ -38,39 +38,46 @@
                     <?php the_content(); ?>
                 </div>
 
+
                 <?php if ((is_page("Dozenten A-Z"))) {
-                    $args = array('post_type' => 'Dozenten', 'orderby' => 'title', 'order' => 'ASC');
+                    $args = array('post_type' => 'Dozenten', 'posts_per_page' => 100, 'orderby' => 'title', 'order' => 'ASC');
 
                     $loop = new WP_Query($args);
-                    $schonvorhanden = array('letter' => $substring, 'count' => 0);
-                    $alpha = array('all' => 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',);
+                    $currenLetter;
+                    $oldLetter;
+
                     while ($loop->have_posts()) : $loop->the_post();
 
                         $name = get_the_title();
                         $substring = substr($name, 0, 1);
-                        $namenarray = array('letter' => $substring);
 
-                        $array = $namenarray;
-                        $zaehle = array_count_values($array);
-                        while (list ($key, $val) = each($zaehle)) {
-                            //echo $key . ' kommt ' . $val . ' mal vor';
-                        }
+                        $currentLetter = $substring;
 
-                        if (in_array(strtolower($namenarray[letter]), $alpha)) {
+                            ?>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 instrument_cat letter">
+                                <?php
 
+                                    if ($oldLetter != $currentLetter) {
 
-                            echo $namenarray[letter];
-
-                        }
+                                        echo $currentLetter;
 
 
-                        ?>
+                                        $oldLetter = $currentLetter;
+
+                                    }
+                                ?>
+
+                            </div>
+                        <?php ?>
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 someSpace">
                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
+                </div>
+
                     <?php endwhile;
                 } ?>
-                <!-- ****************************************************************
-                            Muss eventuell statisch programmiert werden
-                 ****************************************************************-->
+
+
                 <?php if ((is_page("Instrumente"))) {
                     get_template_part('templates/angebot_site_parts/instrumente');
                 } ?>
@@ -108,4 +115,4 @@
         </div>
 
     </div><!-- row -->
-    </div><!-- container -->
+</div><!-- container -->
