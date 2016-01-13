@@ -14,9 +14,6 @@
 body,html{
     overflow-x: hidden;
 }
-/* ***************
-Allgemeine Stileinstellungen
-**************** */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'AW Conqueror Didot', serif;
@@ -133,10 +130,6 @@ body .box-link-container {
     padding: 0;
 }
 
-/*
-Detailsseite Elementarausbildung
-*/
-
 .full-width-image-align {
     padding: 0 !important;
     height: auto;
@@ -151,6 +144,9 @@ Detailsseite Elementarausbildung
 }
 .startseite-link-to-page img {
     transition: all 0.3s ease-in-out;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .startseite-link-to-page img:hover {
@@ -246,6 +242,10 @@ Detailsseite Elementarausbildung
     padding-bottom: 3em;
 }
 
+/************************
+Linke Navigation
+************************/
+
 .menu-left-container li, .menu-anmeldung-container li, #menu-anmeldung li {
     padding-bottom: 1em;
 }
@@ -258,9 +258,9 @@ Detailsseite Elementarausbildung
     text-decoration: none;
 }
 
-/****
+/************************
 Detailsseite
-***/
+************************/
 .acf-small-cat {
     font-weight: 600;
 }
@@ -280,14 +280,9 @@ Anmeldung und Angebot
 
 
 
-#fscf_captcha_refresh1  img{
-    width: 22px ;
-    height: 20px;
-}
 
-/************************
-Events
-************************/
+
+
 
 .events-page{
 	max-width: 1200px;
@@ -296,8 +291,29 @@ Events
 	padding: 30px;
 }
 
-#pagetitle{
-	margin-top: 50px;
-	margin-bottom: 70px;
-	
+#pagetitle {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
 
+/************************
+Kontakt
+************************/
+
+.kontakt-infos, .kontakt-formular{
+    padding-top: 50px;
+    line-height: 2em;
+}
+
+.opening-times{
+
+    padding-top: 25px;
+}
+
+#fscf_captcha_refresh1  img{
+    width: 22px ;
+    height: 20px;
+}
+#fscf_captcha_image_div1 img{
+    width: auto;
+}
