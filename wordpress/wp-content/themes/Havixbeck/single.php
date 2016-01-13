@@ -1,17 +1,17 @@
 <?php get_header(); ?>
-<div class="container-fluid">
-    <div class="row page-image-top">
+    <div class="container-fluid">
+        <div class="row page-image-top">
 
 
-        <?php if (has_post_thumbnail()) {
-            _e('<div class="imagecrop">');
-            the_post_thumbnail();
-            _e('</div>');
-        } ?>
+            <?php if (has_post_thumbnail()) {
+                _e('<div class="imagecrop">');
+                the_post_thumbnail();
+                _e('</div>');
+            } ?>
 
-</div>
-</div>
-<div class="container-fluid">
+        </div>
+    </div>
+    <div class="container-fluid">
     <div class="row">
 
         <div class="
@@ -43,12 +43,12 @@
             <?php the_content(); ?>
         </div>
     </div>
+    </div>
 
 <?php endwhile;
 else: ?>
     <p><?php _e('Sorry, this page does nooot exist.'); ?></p>
 <?php endif; ?>
-
 
 
 <?php get_footer(); ?>

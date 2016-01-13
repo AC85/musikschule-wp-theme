@@ -16,6 +16,8 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
 
 @import url('bootstrap/css/bootstrap.css');
 @import url('custom-css/havix-template.css');
+@import url('custom-css/footer.css');
+@import url('custom-css/header.css');
 @import url('custom-css/custom-events-stylesheet.css');
 
 
@@ -25,32 +27,6 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
 }
 
 
-
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-footer{
-
-    width: 100%;
-    height: 200px;
-    background: #333333;
-
-}
-
-/*.dropdown:hover .dropdown-menu {
-    width:100%;
-    display: block;
-    padding: 10px 0;*/
-    /*padding: 0 1000em; *//* trick from css-tricks comments */
-    /*margin: 0 -1000em;*/ /* trick from css-tricks comments */
-/*}*/
-/*.dropdown-menu li{
-    display: table-cell;
-    text-align: center;
-    margin: 0;
-    padding:15px 0;
-}
-*/
 .imagecrop{
     width: 100%;
     height: 150px !important;
