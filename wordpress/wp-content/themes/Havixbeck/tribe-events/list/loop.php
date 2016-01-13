@@ -12,7 +12,6 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 } ?>
-
 <?php
 global $post;
 global $more;
@@ -20,6 +19,7 @@ $more = false;
 ?>
 
 <div class="tribe-events-loop">
+
 
 	<?php while ( have_posts() ) : the_post(); ?>
 		<?php do_action( 'tribe_events_inside_before_loop' ); ?>
