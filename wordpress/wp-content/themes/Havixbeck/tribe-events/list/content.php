@@ -13,14 +13,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 } ?>
-<div class="full-width-image-on-top">
-    <img src="<?php echo get_template_directory_uri();?>/assets/images/on-top-image.jpg" >
 
-</div>
-
-<div id="pagetitle">
-	<div class="col-md-12 text-center"><h2> Aktuelle Termine </h2></div>
-</div>
 
 <div class="events-page">
 	<div id="tribe-events-content" class="tribe-events-list">
