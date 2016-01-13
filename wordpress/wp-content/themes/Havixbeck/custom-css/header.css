@@ -47,7 +47,7 @@ nav.navbar > .container-fluid .navbar-brand {
     width: 80px;
     height: 65px;
     background-size: 80px 65px;
-    background: #fff url("../assets/images/logo_figure.png");
+    background: #fff url("../../assets/images/logo_figure.png");
 }
 
 nav .navbar-collapse > ul > li {
