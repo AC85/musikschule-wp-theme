@@ -36,27 +36,29 @@
 				<div class="footer">
 					<div class="footer-content">
 						<div class="row">
-							<div class="col-md-2" align="center">
+							<div class="col-xs-12 col-sm-12 col-md-2" align="center">
 								<a href="<?php echo home_url(); ?>">
 				                	<img id="footer-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png">
 				            	</a>
 							</div>
-							<div class="col-md-2">
+							<div class="col-xs-12 col-sm-6 col-md-2">
 								<h3>AKTUELLES</h3>
 									<!--<p>Termin</p>
 									<p>Archiv</p>-->
 									<?php
-										getChildLinksByTitle('Verein');
+										getChildLinksByTitle('Aktuelles');
 									?>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-2">
 								<h3>VEREIN</h3>
 									<!--<p>Organisation</p>
 									<p>Förderer</p>-->
 									<?php
-										getChildLinksByTitle('Aktuelles');
+										getChildLinksByTitle('Verein');
 									?>
 							</div>
 							
-							<div class="col-md-2">
+							<div class="col-xs-12 col-sm-6 col-md-2">
 								<h3>ORCHESTER</h3>
 									<!--<p>Besetzung</p>
 									<p>Dirigent</p>
@@ -67,7 +69,7 @@
 									?>
 							</div>
 							
-							<div class="col-md-2">
+							<div class="col-xs-12 col-sm-6 col-md-2">
 								<h3>ANGEBOT</h3>
 									<!--<p>Instrumente</p>
 									<p>Gesang</p>
@@ -83,7 +85,7 @@
 									?>
 							</div>
 							
-							<div class="col-md-2">
+							<div class="col-xs-12 col-sm-6 col-md-2">
 								<h3>ANMELDUNG</h3>
 									<!--<p>Organisation</p>
 									<p>Förderer</p>-->
@@ -92,7 +94,7 @@
 									?>
 							</div>
 							
-							<div class="col-md-2">
+							<div class="col-xs-12 col-sm-6 col-md-2">
 								<h3>KONTAKT</h3>
 									<!--<p>Organisation</p>
 									<p>Förderer</p>-->
@@ -109,10 +111,15 @@
 						</div>
 					</div>
 					<div class="footer-bottom">
-						<p> Folge uns: </p>
-						
-						<br>
-			    		<p>© Hochschule Düsseldorf Entwicklung - 2015</p>
+						<p> FOLGE UNS: 
+								<a href="https://www.facebook.com/JugendorchesterHavixbeck/">
+				                	<img id="footer-sm" src="<?php echo get_template_directory_uri(); ?>/assets/images/fb_logo.png">
+				            	</a>
+								<a href="https://www.youtube.com/user/JugendorchesterHav">
+				                	<img id="footer-sm" src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube_logo.png">
+				            	</a>
+								<span>© Hochschule Düsseldorf Entwicklung - 2015</span>
+			    		</p>
 					</div>
 				</div>
 				

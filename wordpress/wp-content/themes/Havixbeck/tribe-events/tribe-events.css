@@ -1,0 +1,48 @@
+#tribe-events h2 {
+    text-transform: uppercase;
+}
+
+.tribe-events-list-event-description tribe-events-content {
+	font-size: 30px;
+	color:red;
+}
+
+.tribe-events-event-cost{
+	color:red;
+}
+.tribe-events-list-event-title a{
+	font-family: 'AW Conqueror Didot', serif !important;
+	font-size: 25px;
+	color:#454545;
+	margin-top: 10px;
+}
+.tribe-events-list-event-title a:hover{
+	color:#000000;
+}
+
+.tribe-events-list-separator-month{
+	text-align: center;
+	background-color: transparent;
+	border-bottom: 1px solid black;
+	font-size: 15px;
+}
+.tribe-events-list-event-description tribe-events-content p{
+	font-size: 30px;
+	color:#747272;
+}
+.tribe-events-venue-details{
+	color:black;
+	font-weight: 500;
+}
+.tribe-event-schedule-details{
+	margin-top:5px;
+	margin-bottom: 12px;
+	font-weight: 500;
+	color: #434343;
+}
+
+.tribe-events-schedule h2{
+	font-weight: 500;
+	font-size: 20px;
+	color: black;
+}

@@ -46,6 +46,11 @@ Foooooter
 
 }
 
+.footer-bottom img{
+    width: 25px;
+    height:auto;
+}
+
 #footer-logo {
     max-width: 50%;
     width: 95px;
