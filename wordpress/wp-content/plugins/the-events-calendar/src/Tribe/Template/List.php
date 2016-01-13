@@ -135,7 +135,6 @@ if ( ! class_exists( 'Tribe__Events__Template__List' ) ) {
 
 			header( 'Content-type: application/json' );
 			echo json_encode( $response );
-
 			die();
 		}
 	}

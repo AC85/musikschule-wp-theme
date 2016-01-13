@@ -48,7 +48,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- List Footer -->
 	<?php do_action( 'tribe_events_before_footer' ); ?>
 	<div id="tribe-events-footer">
-
 		<!-- Footer Navigation -->
 		<?php do_action( 'tribe_events_before_footer_nav' ); ?>
 		<?php tribe_get_template_part( 'list/nav', 'footer' ); ?>
