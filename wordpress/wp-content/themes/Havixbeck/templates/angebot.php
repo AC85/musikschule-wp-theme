@@ -1,10 +1,19 @@
 <div class="container-fluid full-width-image-align">
-    <div class="full-width-image-on-top">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/on-top-image.jpg">
 
-    </div>
-    <div class="breadcrumbs"> <?php if (function_exists('nav_breadcrumb')) nav_breadcrumb(); ?> </div>
-</div><!-- container-fluid -->
+    <?php if (has_post_thumbnail()) {
+        _e('<div class="imagecrop page-image-top">');
+        the_post_thumbnail();
+        _e('</div>');
+    } else { ?>
+
+        <div class="full-width-image-on-top">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/on-top-image.jpg">
+
+        </div>
+
+
+    <?php } ?>
+</div>
 <div class="container">
 
 

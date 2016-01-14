@@ -5,5 +5,11 @@
 ?>
 
 <?php get_header(); ?>
-    <?php get_template_part('templates/default-page'); ?>
+
+<?php if (is_page("Organisation")) {
+    get_template_part('templates/organisation');
+} else { ?>
+
+    <?php get_template_part('templates/default-page');
+} ?>
 <?php get_footer(); ?>

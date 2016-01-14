@@ -213,6 +213,18 @@ function create_post_type() {
 
         )
     );
+
+    register_post_type( 'Vorstand',
+        array(
+            'labels' => array(
+                'name' => __( 'Vorstand' ),
+                'singular_name' => __( 'Vorstand' )),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => '/verein/organisation','with_front' => FALSE)
+
+        )
+    );
 }
 add_action( 'init', 'create_post_type', 0 );
 flush_rewrite_rules();
@@ -220,6 +232,11 @@ flush_rewrite_rules();
 function wpfstop_change_default_title( $title ){
     $screen = get_current_screen();
     if ( 'dozenten' == $screen->post_type ){
+        $title = 'Nachname, Vorname';
+    }
+    return $title;
+
+    if ( 'vorstand' == $screen->post_type ){
         $title = 'Nachname, Vorname';
     }
     return $title;
