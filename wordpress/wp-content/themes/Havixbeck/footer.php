@@ -20,16 +20,24 @@
 					}				
 				}
 				
-			?>
-					<?php
+				
 				function getLinkByTitle($title){
+					$page = get_page_by_title($title);
+					$link = get_page_link($page->ID);
+					echo $link;
+				}
+				
+			?>
+			
+			<?php
+				//function getLinkByTitle($title){
 	
 					// Get the page as an Object
-					$post =  get_page_by_title($title);
+				//	$post =  get_page_by_title($title);
 	
-					echo '<a href="', get_page_link($post->ID),'">', $post->post_title, '</a>', '<br>';
+				//	echo '<h3><a href="', get_page_link($post->ID),'">', $post->post_title, '</a></h3>', '<br>';
 						//echo $children->ID;									
-				}
+				//}
 				
 			?>
 
@@ -42,15 +50,17 @@
 				            	</a>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-2">
-								<h3>AKTUELLES</h3>
+								<a href="<?php getLinkByTitle('Aktuelles')?>"><h3>AKTUELLES</h3></a>
+								
 									<!--<p>Termin</p>
 									<p>Archiv</p>-->
-									<?php
-										getChildLinksByTitle('Aktuelles');
-									?>
+								<?php
+									getChildLinksByTitle('Aktuelles');
+								?>
+								<a href="http://localhost/musikschule-wp-theme/wordpress/?post_type=tribe_events">Aktuelle Termine</a>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-2">
-								<h3>VEREIN</h3>
+								<a href="<?php getLinkByTitle('Verein')?>"><h3>VEREIN</h3></a>
 									<!--<p>Organisation</p>
 									<p>Förderer</p>-->
 									<?php
@@ -59,7 +69,7 @@
 							</div>
 							
 							<div class="col-xs-12 col-sm-6 col-md-2">
-								<h3>ORCHESTER</h3>
+								<a href="<?php getLinkByTitle('Orchester')?>"><h3>ORCHESTER</h3></a>
 									<!--<p>Besetzung</p>
 									<p>Dirigent</p>
 									<p>Ehemalige Dirigenten</p>
@@ -70,7 +80,7 @@
 							</div>
 							
 							<div class="col-xs-12 col-sm-6 col-md-2">
-								<h3>ANGEBOT</h3>
+								<a href="<?php getLinkByTitle('Angebot')?>"><h3>ANGEBOT</h3></a>
 									<!--<p>Instrumente</p>
 									<p>Gesang</p>
 									<p>Ensembles</p>
@@ -86,7 +96,7 @@
 							</div>
 							
 							<div class="col-xs-12 col-sm-6 col-md-2">
-								<h3>ANMELDUNG</h3>
+								<a href="<?php getLinkByTitle('Anmeldung')?>"><h3>ANMELDUNG</h3></a>
 									<!--<p>Organisation</p>
 									<p>Förderer</p>-->
 									<?php
@@ -95,33 +105,49 @@
 							</div>
 							
 							<div class="col-xs-12 col-sm-6 col-md-2">
-								<h3>KONTAKT</h3>
+								<a href="<?php getLinkByTitle('Kontakt')?>"><h3>KONTAKT</h3></a>
 									<!--<p>Organisation</p>
 									<p>Förderer</p>-->
 									<?php
-										getLinkByTitle('Organisation');
+										getChildLinksByTitle('Kontakt');
 									?>
-									<?php
-										getLinkByTitle('Förderer');
-									?>
-									<?php
-										getLinkByTitle('Kontakt');
-									?>
+									<a href="<?php getLinkByTitle('Organisation');?>">Organisation</a><br>
+									<a href="<?php getLinkByTitle('Förderer');?>">Förderer</a><br>
+									<a href="<?php getLinkByTitle('Kontakt');?>">Kontakt</a><br>
+
 							</div>
 						</div>
 					</div>
 					<div class="footer-bottom">
-						<p> FOLGE UNS: 
-								<a href="https://www.facebook.com/JugendorchesterHavixbeck/">
-				                	<img id="footer-sm" src="<?php echo get_template_directory_uri(); ?>/assets/images/fb_logo.png">
-				            	</a>
-								<a href="https://www.youtube.com/user/JugendorchesterHav">
-				                	<img id="footer-sm" src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube_logo.png">
-				            	</a>
-								<span>© Hochschule Düsseldorf Entwicklung - 2015</span>
-			    		</p>
-					</div>
-				</div>
+						<div class ="footer-bottom-content">
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-4 col-centered">
+									<div id="logo">
+										<p> FOLGE UNS: </p>
+									</div>
+									<div id="logo">
+										<a href="https://www.facebook.com/JugendorchesterHavixbeck/">
+											<div id="footer-fb"></div>
+							                	<!--<img id="footer-fb" src="<?php echo get_template_directory_uri(); ?>/assets/images/fb_logo.png">-->
+							            </a>
+									</div>
+							        <div id="logo">  				            
+										<a href="https://www.youtube.com/user/JugendorchesterHav">
+											<div id="footer-yt"></div>
+			
+							                	<!--<img id="footer-yt" src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube_logo.png">-->
+							            </a>
+							        </div>
+								</div><!--class col-->
+								<div class="col-xs-12 col-sm-12 col-md-8 col-centered">
+							        <div id="logo">
+										<span>© Hochschule Düsseldorf Entwicklung - 2015</span>
+							        </div>
+								</div><!--class col-->
+							</div>
+						</div><!--row-->
+					</div><!--footer-bottom-content-->
+				</div><!--footer-bottom-->
 				
 			
 		</footer>

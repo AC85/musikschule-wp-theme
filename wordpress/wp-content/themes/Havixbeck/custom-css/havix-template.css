@@ -15,12 +15,24 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'AW Conqueror Didot', serif !important;
 }
 
+/*Testteil***********//*
+
+h2{
+	font-size: 30px;
+}*/
+
 a,li {
     color: #00aeef;
 }
 
 body, p,  span, a, li {
     font-family: 'Raleway', sans-serif !important;
+    /*Neuer Testteil*/
+    /**//*
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.7;*/
 }
 
 
@@ -401,7 +413,7 @@ Foooooter
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 30px;
+	padding: 20px;
 }
 .footer a:hover{
 	text-decoration: none;
@@ -414,7 +426,7 @@ Foooooter
 	color: #a09fa2;
 	line-height: 200%;
 }
-.footer h3 {
+.footer h3{
 	font-family: 'AW Conqueror Didot', serif !important;
 	line-height: 150%;
 
@@ -432,25 +444,65 @@ Foooooter
     font-weight:400;
     color: #6e6d71;
     line-height: 250%;
-    padding-left: 50px;
 }
 .footer-bottom{
+	margin: 0 auto;
 	border-top: 1px solid #38393b;
 	text-align: center;
+	align-content: center;
 	padding: 20px;
-	
+	padding-bottom: 30px;	
 }
-#footer-logo {
+.footer-bottom-content{
+	max-width: 800px;
+	margin-left:auto;
+	margin-right: auto;
+}
+	
+#footer-logo{
 	max-width: 50%;
 	width: 95px;
     height: auto;
     margin: 20px;
 }
-#footer-sm {
-	width: auto;
+
+#logo{
+	float: left;
+}
+#footer-fb {
+	align-self: center;
+	background-image: url("../assets/images/fb_logo.png");
+	background-size: auto 25px;
+	background-repeat: no-repeat;
+	width: 25px;
 	height: 25px;
 	margin-left: 15px;
 }
+
+.col-centered{
+	text-align: center;
+    float: none;
+    margin: 0 auto;
+}
+#footer-fb:hover{
+	background-image: url("../assets/images/FB-f-Logo__blue_100.png");
+}
+
+#footer-yt{
+	align-self: center;
+	background-image: url("../assets/images/youtube_logo.png");
+	background-size: auto 25px;
+	background-repeat: no-repeat;
+	width: 36px;
+	height: 25px;
+	margin-left: 15px;
+}
+
+#footer-yt:hover{
+	background-image: url("../assets/images/YouTube-icon-full_color.png");
+}
+
+
 
 /************************
 Events

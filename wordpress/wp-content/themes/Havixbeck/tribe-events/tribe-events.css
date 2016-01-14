@@ -4,7 +4,6 @@
 
 .tribe-events-list-event-description tribe-events-content {
 	font-size: 30px;
-	color:red;
 }
 
 .tribe-events-event-cost{
@@ -26,10 +25,6 @@
 	border-bottom: 1px solid black;
 	font-size: 15px;
 }
-.tribe-events-list-event-description tribe-events-content p{
-	font-size: 30px;
-	color:red;
-}
 .tribe-events-venue-details{
 	color:#878787;
 	font-weight: 500;
@@ -43,4 +38,26 @@
 .tribe-events-schedule h2{
 	font-weight: 500;
 	font-size: 20px;
+}
+
+.tribe-events-notices{
+	background: #f4f4f4;
+	text-align: center;
+	border: none;
+	color: black;
+	margin: 10px 0 18px;
+	padding: 8px 35px 8px 14px;
+	text-shadow: none;
+}
+
+.tribe-events-notices li{
+	color: black;
+}
+
+ul li.tribe-events-nav-previous.tribe-events-nav-left.tribe-events-past a{
+	color: #757575;
+}
+
+ul li.tribe-events-nav-previous.tribe-events-nav-left.tribe-events-past a:hover{
+	color: black;
 }
