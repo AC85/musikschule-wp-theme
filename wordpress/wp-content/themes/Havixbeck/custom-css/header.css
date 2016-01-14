@@ -170,4 +170,20 @@ nav.navbar-default .navbar-toggle:hover .icon-bar {
     background-color: #fff;
 }
 
+.affix {
+      top: 0;
+      width: 100%;
+      background-color: #000;
+  }
+
+.affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+body nav {
+    z-index:1;
+}
+
+
+
 /*/FBE*/
