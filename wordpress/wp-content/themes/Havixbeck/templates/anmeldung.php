@@ -40,7 +40,7 @@
 
             <?php while (have_posts()) : the_post(); ?>
 
-                <h2>
+                <h2 class="details-header">
                     <?php if (!(is_page("Anmeldung"))) the_title(); ?>
                 </h2>
                 <p>

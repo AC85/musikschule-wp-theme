@@ -12,7 +12,7 @@
         <!-- Side navigation -->
         <div class="col-md-3">
 
-
+            <h2>Angebot</h2>
             <?php
             wp_nav_menu(array(
                     'menu' => 'left',

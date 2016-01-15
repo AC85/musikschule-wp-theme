@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <div class="container">
+    <div class="container news-container">
 <?php
 
 $i = 0;
@@ -14,11 +14,12 @@ if (have_posts()) : while (have_posts()) :
     <?php else: ?>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
         <?php endif; ?>
-        <?php
-        if (has_post_thumbnail()) {
-            the_post_thumbnail();
-        }
-        ?>
+        <a href="<?php echo get_permalink(); ?>"> <?php
+            if (has_post_thumbnail()) {
+                the_post_thumbnail();
+            }
+            ?></a>
+
     </div>
     <?php if ($i++ === 0): ?>
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
