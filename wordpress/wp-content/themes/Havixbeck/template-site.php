@@ -1,3 +1,8 @@
+<?php
+/**
+ * Template Name: Normal
+ */
+?>
 <?php get_header(); ?>
 
 <?php if (is_page("Organisation")) {
