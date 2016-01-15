@@ -12,7 +12,7 @@
         </div>
 
 
-     <?php } ?>
+    <?php } ?>
 </div>
 
 <div class="max-width-container text-center">
