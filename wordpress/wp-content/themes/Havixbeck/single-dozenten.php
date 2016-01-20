@@ -8,7 +8,7 @@
         <!-- Side navigation -->
         <div class="col-md-3">
 
-
+            <h2><a href="<?php echo esc_url(get_permalink(get_page_by_title('Angebot'))); ?>"> Angebot</a></h2>
             <?php
             wp_nav_menu(array(
                     'menu' => 'left',

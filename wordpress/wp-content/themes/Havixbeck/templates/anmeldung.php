@@ -22,7 +22,7 @@
         <!-- Side navigation -->
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
 
-            <h2>Anmeldung</h2>
+            <h2><a href="<?php echo esc_url(get_permalink(get_page_by_title('Anmeldung'))); ?>">Anmeldung</a></h2>
             <?php
             wp_nav_menu(array(
                     'menu' => 'anmeldung',

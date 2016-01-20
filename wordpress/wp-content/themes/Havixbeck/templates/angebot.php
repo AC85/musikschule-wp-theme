@@ -22,7 +22,7 @@
         <!-- Side navigation -->
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
 
-            <h2>Angebot</h2>
+            <h2><a href="<?php echo esc_url(get_permalink(get_page_by_title('Angebot'))); ?>">Angebot</a></h2>
             <?php
             wp_nav_menu(array(
                     'menu' => 'left',
@@ -36,13 +36,13 @@
         </div>
 
         <!-- Content Area -->
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 
             <?php while (have_posts()) : the_post(); ?>
 
-                <h2 class="sub-angebot">
+                <h3 class="sub-angebot">
                     <?php if (!(is_page("Angebot"))) the_title(); ?>
-                </h2>
+                </h3>
                 <div class="content">
                     <?php the_content(); ?>
                 </div>
@@ -68,25 +68,13 @@
                             Ensembles
                  ****************************************************************-->
                 <?php if ((is_page("Ensembles"))) {
-                    $args = array('post_type' => 'Ensembles', 'orderby' => 'title', 'order' => 'ASC');
-                    $loop = new WP_Query($args);
-                    while ($loop->have_posts()) : $loop->the_post();
-
-                        ?>
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
-                        <?php
-
-                    endwhile;
-
-
+                    get_template_part('templates/angebot_site_parts/ensembles');
                 } ?>
 
                 <!-- ****************************************************************
                             Elementarausbildung
                  ****************************************************************-->
                 <?php if ((is_page("Elementarausbildung"))) {
-
-
                     get_template_part('templates/angebot_site_parts/elementarausbildung');
                 } ?>
 
@@ -94,8 +82,6 @@
                             Fächer A-Z
                  ****************************************************************-->
                 <?php if ((is_page("Fächer A-Z"))) {
-
-
                     get_template_part('templates/angebot_site_parts/faecher');
                 } ?>
 
