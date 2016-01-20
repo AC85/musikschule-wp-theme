@@ -1,4 +1,4 @@
-	
+	<?php wp_footer(); ?>
 		<footer>
 			<?php
 				function getChildLinksByTitle($title){
