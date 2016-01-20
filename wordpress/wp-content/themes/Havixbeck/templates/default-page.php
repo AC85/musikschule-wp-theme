@@ -48,9 +48,7 @@
             <?php if (is_page("Musikschule")) {
                 get_template_part('templates/musikschule');
             }
-            if (is_page("Besetzung")) {
-                //get_template_part('templates/musikschule');
-            }
+
             ?>
 
         </div><!-- row-->
