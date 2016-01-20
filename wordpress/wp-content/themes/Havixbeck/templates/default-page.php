@@ -1,7 +1,7 @@
 <div class="container-fluid full-width-image-align">
 
     <?php if (has_post_thumbnail()) {
-        _e('<div class="imagecrop page-image-top">');
+        _e('<div class="imagecrop page-image-top-main">');
         the_post_thumbnail();
         _e('</div>');
     } else { ?>

@@ -141,6 +141,7 @@
 								</div><!--class col-->
 								<div class="col-xs-12 col-sm-12 col-md-8 col-centered">
 							        <div id="logo">
+										<span><a href="<?php echo esc_url(get_permalink(get_page_by_title('Impressum'))); ?>">Impressum</a></span>
 										<span>© Hochschule Düsseldorf Entwicklung - 2015</span>
 							        </div>
 								</div><!--class col-->
