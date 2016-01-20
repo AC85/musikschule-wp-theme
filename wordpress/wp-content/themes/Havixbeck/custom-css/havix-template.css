@@ -16,28 +16,29 @@ body, html {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2,h2 a, h3, h4, h5, h6 {
     font-family: 'AW Conqueror Didot', serif;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 2em;
+}
+h2 a{
+    color: #000;
+}
+h3{
+    font-size: 1.5em;
 }
 
 a, li {
-
     color: #00aeef;
 }
 
-a:hover, a:focus{
-    cursor:pointer;
-    text-decoration: underline;
-    color:#23527c;
-}
 
 body, p, span, a, li {
-    font-family: 'Raleway', sans-serif !important;
-  
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.75em;
+
 }
 
 .text-justify {
@@ -45,6 +46,7 @@ body, p, span, a, li {
 }
 
 img {
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
@@ -55,9 +57,13 @@ img {
     overflow: hidden;
 }
 
+.page-image-top{
+    padding-top: 35px;
+}
+
 .text-on-img {
 
-    color: #f5f5f5;
+    color: whitesmoke;
     z-index: 2;
     left: 0;
     bottom: 30%;
@@ -105,7 +111,7 @@ body .box-link-container {
     transition: all 0.3s ease-in-out;
 }
 
-.box-link:hover img {
+.box-link img:hover {
     transform: scale(1.1);
 }
 
@@ -120,6 +126,7 @@ body .box-link-container {
     color: #000;
     bottom: 0px;
     width: 100%;
+    z-index: 10;
     height: 35px;
     left: 0px;
     right: 15px;
@@ -168,7 +175,7 @@ body .box-link-container {
     height: auto;
 }
 
-.startseite-link-to-page:hover img {
+.startseite-link-to-page img:hover {
     transform: scale(1.1);
 
 }
@@ -204,6 +211,8 @@ body .box-link-container {
     height: 450px;
     width: 100%;
     overflow: hidden;
+
+    margin-bottom: 1px;
 }
 
 .full-width-image-on-top-start img {
@@ -239,11 +248,6 @@ body .box-link-container {
     padding-top: 30px;
 }
 
-.start-news-text p, .start-news-text a {
-    font-size: 1.25em;
-    text-decoration: none;
-
-}
 
 .start-news-title a {
     font-family: "AW Conqueror Didot", serif !important;
@@ -252,19 +256,20 @@ body .box-link-container {
 }
 
 .elar_beschreibung {
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 }
 
 .instrument_cat_elem {
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 }
 
 .instrument_cat {
-    font-weight: 600;
+    font-size: 1.1em;
 }
 
 .content {
-    padding-bottom: 3em;
+    padding-bottom: 2em;
+    
 }
 
 /************************
@@ -279,18 +284,9 @@ Linke Navigation
     text-decoration: underline;
 }
 
-.menu-left-container li a:hover, 
-.menu-anmeldung-container li a:hover, 
-#menu-anmeldung li a:hover,
-.start-news-text a:hover
- {
-    text-decoration: underline;
+.menu-left-container li a:hover, .menu-anmeldung-container li a:hover, #menu-anmeldung li a:hover {
+    text-decoration: none;
 }
-
-.start-news-text a:hover
-{
-    color: #23527c;
-    cursor:pointer;
 
 /************************
 Detailsseite
@@ -305,13 +301,19 @@ Detailsseite
     font-weight: 400;
     font-size: 20pt;
 }
+.normal-list{
+list-style: none;
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+}
+
 
 /*
 Anmeldung und Angebot
 */
 .sub-angebot {
-    padding-top: 35px;
-    font-size: 20pt;
+    padding: 2em 0 1em 0;
 }
 
 .events-page {
@@ -359,7 +361,6 @@ Kontakt
     text-decoration: none;
     color: white;
     text-shadow: 0px 0px 20px yellow;
-    color:#fff;
 }
 
 .footer a {
@@ -372,12 +373,9 @@ Kontakt
 .footer h3 {
     font-family: 'AW Conqueror Didot', serif !important;
     line-height: 150%;
-    color: #dedede;
-    font-size: 20pt;
-}
 
-.footer h3:hover{
-    color:#fff;
+    color: #ebe8f1;
+    font-size: 20pt;
 }
 
 .footer p {

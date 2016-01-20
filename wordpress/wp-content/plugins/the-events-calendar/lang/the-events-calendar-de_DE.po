@@ -2156,8 +2156,8 @@ msgid "No matching %1$s listed under %2$s. Please try viewing the full calendar 
 msgstr "Keine passenden %1$s gefunden für %2$s. Bitte versuchen Sie alle Veranstaltungen anzuzeigen (Filter aufheben)."
 
 #: src/Tribe/Template/Month.php:289 src/Tribe/Template_Factory.php:366
-msgid "There were no results found."
-msgstr "Es wurden keine Ergebnisse gefunden."
+msgid "There are no current events."
+msgstr "Zur Zeit sind noch keine Termine vorhanden."
 
 #: src/Tribe/Template/Month.php:692
 msgid "The requested date \"%s\" was not valid &ndash; showing the current month instead"
