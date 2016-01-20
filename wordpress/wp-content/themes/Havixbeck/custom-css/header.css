@@ -46,8 +46,15 @@ nav.navbar > .container-fluid .navbar-brand {
     margin: 0;
     width: 80px;
     height: 65px;
+    
+    background:url("../assets/images/logo_figure.png");
     background-size: 80px 65px;
-    background: #fff url("../assets/images/logo_figure.png");
+    background-repeat: no-repeat;
+    background-color: #dedede;
+}
+
+nav.navbar > .container-fluid .navbar-brand:hover{
+    background-color: #fff;
 }
 
 nav .navbar-collapse > ul > li {
