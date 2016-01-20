@@ -23,15 +23,20 @@ Foooooter
 }
 
 .footer a {
-    font-family: 'Lato', sans-serif !important;
+    /*font-family: 'Lato', sans-serif !important;*/
     color: #a09fa2;
     line-height: 200%;
 }
 
 .footer h3 {
-    font-family: 'Lora', serif !important;
-    color: #ebe8f1;
-    font-size: 20pt;
+  /*  font-family: 'Lora', serif !important;*/
+    color: #dedede;
+    font-size: 19pt;
+}
+
+
+.footer h3:hover{
+    color:#fff;
 }
 
 .footer p, span {
