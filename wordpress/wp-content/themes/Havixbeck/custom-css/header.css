@@ -51,7 +51,8 @@ nav.navbar > .container-fluid .navbar-brand {
     background-size: 80px 65px;
     background-repeat: no-repeat;
     background-color: #dedede;
-}
+} 
+
 
 nav.navbar > .container-fluid .navbar-brand:hover{
     background-color: #fff;
