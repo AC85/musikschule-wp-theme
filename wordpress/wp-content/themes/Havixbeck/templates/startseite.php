@@ -1,60 +1,64 @@
-<div class="container-fluid full-width-image-align">
+
+<div class="outerDiv">
+    <div class="container-fluid full-width-image-align">
 
 
-    <?php if (has_post_thumbnail()) {
-        _e('<div class="full-width-image-on-top-start">');
-        the_post_thumbnail();
-        _e('</div>');
-    } else { ?>
+        <?php if (has_post_thumbnail()) {
+            _e('<div id="startbild" class="full-width-image-on-top-start">');
+            the_post_thumbnail();
+            _e('</div>');
+        } else { ?>
 
-        <div class="full-width-image-on-top-start">
+            <div class="full-width-image-on-top-start">
 
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/on-top-image.jpg">
+                <img id="startbild" src="<?php echo get_template_directory_uri(); ?>/assets/images/on-top-image.jpg">
+
+            </div>
+
+
+
+        <?php } ?>
+    </div>
+
+    <div class="container-fluid main-padding innerDiv">
+        <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 startseite-link-to-page">
+
+
+                <a href=" <?php echo esc_url(get_permalink(get_page_by_title('Angebot'))); ?>"><img
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/startseite-bild.jpg">
+
+                    <div class="grey-overlay"><h4>Angebot</h4></div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 startseite-link-to-page secondImg">
+                <a href="<?php echo esc_url(get_permalink(get_page_by_title('Orchester'))); ?>"><img
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/orchester_fullscreen.png">
+
+                    <div class="grey-overlay"><h4>Orchester</h4></div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 startseite-link-to-page thirdImg">
+                <a href="<?php echo esc_url(get_permalink(get_page_by_title('Anmeldung'))); ?>"><img
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/Startseite_anmeldung.jpg">
+
+                    <div class="grey-overlay"><h4>Anmeldung</h4></div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 startseite-link-to-page">
+                <a href="<?php echo esc_url(get_permalink(get_page_by_title('Termine'))); ?>"><img
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/startseite-bild.jpg">
+
+                    <div class="grey-overlay"><h4>Termine</h4></div>
+                </a>
+            </div>
+
+
+            <div class="row"></div>
+
 
         </div>
-
-
-    <?php } ?>
-</div>
-
-<div class="container-fluid main-padding">
-    <div class="row">
-
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 startseite-link-to-page">
-
-
-            <a href=" <?php echo esc_url(get_permalink(get_page_by_title('Angebot'))); ?>"><img
-                    src="<?php echo get_template_directory_uri(); ?>/assets/images/startseite-bild.jpg">
-
-                <div class="grey-overlay"><h4>Angebot</h4></div>
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 startseite-link-to-page secondImg">
-            <a href="<?php echo esc_url(get_permalink(get_page_by_title('Orchester'))); ?>"><img
-                    src="<?php echo get_template_directory_uri(); ?>/assets/images/orchester_fullscreen.png">
-
-                <div class="grey-overlay"><h4>Orchester</h4></div>
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 startseite-link-to-page thirdImg">
-            <a href="<?php echo esc_url(get_permalink(get_page_by_title('Anmeldung'))); ?>"><img
-                    src="<?php echo get_template_directory_uri(); ?>/assets/images/Startseite_anmeldung.jpg">
-
-                <div class="grey-overlay"><h4>Anmeldung</h4></div>
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 startseite-link-to-page">
-            <a href="<?php echo esc_url(get_permalink(get_page_by_title('Termine'))); ?>"><img
-                    src="<?php echo get_template_directory_uri(); ?>/assets/images/startseite-bild.jpg">
-
-                <div class="grey-overlay"><h4>Termine</h4></div>
-            </a>
-        </div>
-
-
-        <div class="row"></div>
-
-
     </div>
 </div>
 

@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
     <div class="container news-container">
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center content"><h2>Aktuelles</h2></div>
+
 <?php
 
 $i = 0;

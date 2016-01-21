@@ -207,8 +207,10 @@ body .box-link-container {
     position: relative;
 }
 
+
+
 .full-width-image-on-top-start {
-    height: 450px;
+    max-height: 450px;
     width: 100%;
     overflow: hidden;
 }
@@ -233,7 +235,7 @@ body .box-link-container {
     font-size: 3em;
 }
 
-.main-site-post {
+.main-site-post, .padding_top {
     padding-top: 25px;
 }
 

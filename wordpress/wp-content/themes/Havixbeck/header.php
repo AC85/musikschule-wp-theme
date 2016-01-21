@@ -16,6 +16,7 @@
 
     <?php wp_enqueue_script("jquery"); ?>
     <?php wp_head(); ?>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/scripts/jquery-1.12.0.min.js"></script>
   
 </head>
 <body>
