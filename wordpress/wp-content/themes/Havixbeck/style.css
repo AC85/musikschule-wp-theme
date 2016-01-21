@@ -24,9 +24,19 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 786px ) and (max-width: 991px ) {
 
+    .menu-left-container ul li a{
+
+        display: block;
+        padding: 8px;
+        background-color: #dddddd;
+    
+    }
     .menu-left-container ul li{
         display: inline;
+        float: left;
     }
+
+
 
     .startseite-link-to-page img{
 
