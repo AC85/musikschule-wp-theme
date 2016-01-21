@@ -57,25 +57,25 @@
                 while ($loop->have_posts()) :
                     $loop->the_post(); ?>
 
+                    <div class="row vorstandsmargin">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ">
+                            <?php $instrument_bild = get_field("vorstand_bild");
+                            if ($instrument_bild != null): ?>
 
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ">
-                        <?php $instrument_bild = get_field("vorstand_bild");
-                        if ($instrument_bild != null): ?>
+                                <img src="<?php the_field('vorstand_bild'); ?>"/>
 
-                            <img src="<?php the_field('vorstand_bild'); ?>"/>
+                            <?php endif; ?>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 text-left">
 
-                        <?php endif; ?>
+                            <b><?php echo the_title(); ?></b>
+                            <?php
+                            echo '<br>';
+                            echo the_field('vorstand_position');
+                            ?>
+
+                        </div>
                     </div>
-                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 text-left">
-
-                        <b><?php echo the_title(); ?></b>
-                        <?php
-                        echo '<br>';
-                        echo the_field('vorstand_position');
-                        ?>
-
-                    </div>
-
 
                 <?php endwhile; ?>
             </div>
