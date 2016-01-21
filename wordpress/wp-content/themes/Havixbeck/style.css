@@ -24,6 +24,10 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 786px ) and (max-width: 991px ) {
 
+    .menu-left-container ul li{
+        display: inline;
+    }
+
     .startseite-link-to-page img{
 
         height: 100%;
