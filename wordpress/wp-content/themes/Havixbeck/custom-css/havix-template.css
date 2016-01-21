@@ -111,13 +111,13 @@ body .box-link-container {
     transition: all 0.3s ease-in-out;
 }
 
-.box-link img:hover {
+.box-link:hover img {
     transform: scale(1.1);
 }
 
 .box-link-image {
     height: auto;
-    width: 100%;
+    width: 100%;:hover
 }
 
 .box-link-text {
@@ -175,7 +175,7 @@ body .box-link-container {
     height: auto;
 }
 
-.startseite-link-to-page img:hover {
+.startseite-link-to-page:hover img {
     transform: scale(1.1);
 
 }
@@ -211,8 +211,6 @@ body .box-link-container {
     height: 450px;
     width: 100%;
     overflow: hidden;
-
-    margin-bottom: 1px;
 }
 
 .full-width-image-on-top-start img {
@@ -252,7 +250,8 @@ body .box-link-container {
 .start-news-title a {
     font-family: "AW Conqueror Didot", serif !important;
     color: black;
-    font-size: 2em;
+    font-size: 1.7em;
+    text-transform: uppercase;
 }
 
 .elar_beschreibung {
@@ -360,7 +359,7 @@ Kontakt
 .footer a:hover {
     text-decoration: none;
     color: white;
-    text-shadow: 0px 0px 20px yellow;
+    /*text-shadow: 0px 0px 20px yellow;*/
 }
 
 .footer a {

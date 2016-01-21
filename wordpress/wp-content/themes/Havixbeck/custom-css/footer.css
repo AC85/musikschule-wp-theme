@@ -21,13 +21,11 @@ Foooooter
 }
 
 .footer a {
-    /*font-family: 'Lato', sans-serif !important;*/
     color: #a09fa2;
     line-height: 200%;
 }
 
 .footer h3 {
-  /*  font-family: 'Lora', serif !important;*/
     color: #dedede;
     font-size: 19pt;
 }
@@ -38,7 +36,6 @@ Foooooter
 }
 
 .footer p, span {
-    font-family: 'Lato', sans-serif !important;
     color: #a09fa2;
 }
 
