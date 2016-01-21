@@ -20,7 +20,7 @@
     <div class="row">
 
         <!-- Side navigation -->
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 
             <h2><a href="<?php echo esc_url(get_permalink(get_page_by_title('Angebot'))); ?>">Angebot</a></h2>
             <?php

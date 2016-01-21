@@ -22,16 +22,46 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 786px ) and (max-width: 991px ) {
-
-    .menu-left-container ul li a{
+@media (max-width: 786px ) {
+    .menu-left-container ul li a,.menu-anmeldung-container ul li a{
 
         display: block;
         padding: 8px;
-        background-color: #dddddd;
+        background-color: #f5f5f5;
+
+    }
+    .menu-left-container ul, .menu-anmeldung-container ul {
+        text-align: center;
+    }
+    .menu-left-container ul li, .menu-anmeldung-container ul li{
+        padding: 10px;
+        display: inline;
+        float: left;
+    }
+
+
+
+    .startseite-link-to-page img{
+
+        height: 100%;
+        max-height: 350px;
+        width: 100%;
+    }
+}
+@media (min-width: 786px ) and (max-width: 991px ) {
+
+    .menu-left-container ul li a,.menu-anmeldung-container ul li a{
+
+        display: block;
+        padding: 8px;
+        background-color: #f5f5f5;
     
     }
-    .menu-left-container ul li{
+    .menu-left-container ul, .menu-anmeldung-container ul {
+        text-align: center;
+    }
+    .menu-left-container ul li, .menu-anmeldung-container ul li{
+        padding: 10px;
         display: inline;
         float: left;
     }
