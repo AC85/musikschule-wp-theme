@@ -311,7 +311,7 @@ Detailsseite
     font-size: 20pt;
 }
 .normal-list{
-list-style: none;
+    list-style: none;
     margin:0;
     padding: 0;
     text-decoration: none;
@@ -389,7 +389,7 @@ Kontakt
 
 .footer p {
     font-family: 'Raleway' !important;
-    font-weight: 500;
+
     color: #a09fa2;
 }
 
@@ -434,7 +434,6 @@ Kontakt
     width: 25px;
     height: 25px;
     margin-left: 15px;
-> > > > > > > ThomasNeu
 }
 
 .col-centered {

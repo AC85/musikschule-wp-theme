@@ -35,7 +35,7 @@ Foooooter
     color:#fff;
 }
 
-.footer p, span {
+.footer p, .footer span {
     color: #a09fa2;
 }
 
@@ -64,4 +64,5 @@ footer {
 
 footer #impressum{
     margin-left: 30px;
+    margin-top: -2px;
 }
