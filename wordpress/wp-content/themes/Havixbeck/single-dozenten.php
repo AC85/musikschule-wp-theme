@@ -22,7 +22,7 @@
         </div>
 
         <!-- Content Area -->
-        <div class="col-md-9">
+        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
 
             <div class="row" role="main">
 
@@ -30,7 +30,7 @@
 
 
                     <header>
-                        <h1 class="details-header"><?php the_title(); ?></h1>
+                        <h3 class="sub-angebot"><?php the_title(); ?></h3>
                     </header>
 
 

@@ -36,7 +36,7 @@
         </div>
 
         <!-- Content Area -->
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 
             <?php while (have_posts()) : the_post(); ?>
 

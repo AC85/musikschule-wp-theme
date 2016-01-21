@@ -270,7 +270,7 @@ body .box-link-container {
 
 .content {
     padding-bottom: 2em;
-    
+
 }
 
 /************************
@@ -293,11 +293,11 @@ Linke Navigation
 Detailsseite
 ************************/
 .acf-small-cat {
-    font-weight: 600;
+ font-size: 1.1em;
 }
 
 .details-header {
-    margin-top: 35px;
+    margin-top: 2.75em;
     font-family: "AW Conqueror Didot";
     font-weight: 400;
     font-size: 20pt;
@@ -314,7 +314,7 @@ list-style: none;
 Anmeldung und Angebot
 */
 .sub-angebot {
-    padding: 2em 0 1em 0;
+    padding: 2.75em 0 1em 0;
 }
 
 .events-page {
