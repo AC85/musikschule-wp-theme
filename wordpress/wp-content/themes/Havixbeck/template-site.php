@@ -7,7 +7,10 @@
 
 <?php if (is_page("Organisation")) {
     get_template_part('templates/organisation');
-} else {
+} if(is_page("Förderer")) {
+    get_template_part('templates/foerderer');
+}
+else {
     get_template_part('templates/default-page');
 } ?>
 
