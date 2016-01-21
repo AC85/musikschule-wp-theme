@@ -142,9 +142,9 @@
 								<!--<div class="col-xs-12 col-sm-12 col-md-8 col-centered">-->
 							        <div id="logo">
 										<div id="impressum">
-											<span>
+											<p>
 												<a href="<?php echo esc_url(get_permalink(get_page_by_title('Impressum'))); ?>">Impressum</a>
-											</span>
+											</p>
 										</div>
 							        </div>
 								</div><!--class col-->
