@@ -48,7 +48,7 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
     .innerDiv{
         position: absolute;
         bottom: 0;
-        margin-bottom: -28px;
+        margin-bottom: -30px;
     }
 
     .full-width-image-on-top-start {
@@ -81,7 +81,7 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
     .innerDiv{
         position: absolute;
         bottom: 0;
-        margin-bottom: -28px;
+        margin-bottom: -30px;
     }
 
     .full-width-image-on-top-start {
@@ -93,7 +93,7 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
     .full-width-image-on-top-start img{
         max-width: 1920px;
         width: 150%;
-        left:-25%;
+
 
         height: auto;
 

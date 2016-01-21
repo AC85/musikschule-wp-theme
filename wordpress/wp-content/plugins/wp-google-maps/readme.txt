@@ -3,7 +3,7 @@ Contributors: WPGMaps, NickDuncan, CodeCabin_, Jarryd Long
 Donate link: http://www.wpgmaps.com
 Tags: google maps, maps, map, map markers, google, google map, google maps plugin, wp maps, wp google maps, wp google map, easy map, store locator, map plugin, directions, map directions, google map plugin, routes, polygons, polylines, streetview, location, marker, latitude, longitude, map widget, map themes
 Requires at least: 3.5
-Tested up to: 4.4
+Tested up to: 4.4.1
 Stable tag: trunk
 License: GPLv2
 
@@ -72,7 +72,7 @@ The [WP Google Maps Pro Version](http://www.wpgmaps.com/purchase-professional-ve
 * Multiple map widget functionality
 * Add retina-ready map marker icons
 * WordPress Network friendly
-* Get the [WP Google Maps Professional Edition](http://www.wpgmaps.com/purchase-professional-version/) for only $19.99
+* Get the [WP Google Maps Professional Edition](http://www.wpgmaps.com/purchase-professional-version/) for only $39.99
 
 
 = Translations =
@@ -158,7 +158,7 @@ In order to make use of WP Google Maps Store Locator functionality, simply click
 == Frequently Asked Questions ==
 
 = How do I get WP Google Maps Pro? =
-Simply visit http://www.wpgmaps.com and purchase the WP Google Maps Professional Edition for $19.99 once off. Free updates and support included forever.
+Simply visit http://www.wpgmaps.com and purchase the WP Google Maps Professional Edition for $39.99 once off. Free updates and support included forever.
 
 = I've installed the plugin, now what? =
 Once installed and activated, a link should appear in your left navigation panel within your WP-ADMIN section. Click on the "WP Google Maps" link and follow the on screen instructions.
@@ -205,6 +205,9 @@ We no longer support timthumb and we have opted to remove it from WP Google Maps
 Please upgrade your version of WP Google Maps to version 6.0.27 as it includes multiple security improvements.
 
 == Changelog ==
+
+= 6.3.05 - 2016-01-14 - Low priority =
+* Multiple tab compatibility added
 
 = 6.3.04 - 2016-01-04 - Low priority =
 * Tested with WP 4.4

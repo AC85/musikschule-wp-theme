@@ -16,14 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 do_action( 'tribe_events_before_template' );
 ?>
-	<div class="full-width-image-on-top">
-		<img src="<?php echo get_template_directory_uri();?>/assets/images/on-top-image.jpg" >
-
-	</div>
-
 
 	<!-- Tribe Bar -->
-
+<?php tribe_get_template_part( 'modules/bar' ); ?>
 
 	<!-- Main Events Content -->
 <?php tribe_get_template_part( 'list/content' ); ?>
