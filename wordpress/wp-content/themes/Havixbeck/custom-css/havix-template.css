@@ -120,7 +120,7 @@ body .box-link-container {
 
 .box-link-image {
     height: auto;
-    width: 100%;:hover
+    width: 100%;
 }
 
 .box-link-text {
@@ -159,6 +159,7 @@ body .box-link-container {
 .full-width-image-align {
     padding: 0 !important;
     height: auto;
+    margin-bottom: 2em;
 }
 
 .startseite-link-to-page {
@@ -213,6 +214,7 @@ body .box-link-container {
     height: 450px;
     width: 100%;
     overflow: hidden;
+    margin-bottom: -2em;
 }
 
 .full-width-image-on-top-start img {
@@ -220,6 +222,10 @@ body .box-link-container {
     height: auto;
     position: relative;
 
+}
+
+.tribe-events-content{
+    margin-top: 8px;
 }
 
 .secondImg img {
@@ -463,4 +469,9 @@ News
 
 .news-container a {
     color: #2f2f34;
+}
+
+.aktuellesbeitrag h2{
+    text-align: center;
+    margin-top: 40px;
 }

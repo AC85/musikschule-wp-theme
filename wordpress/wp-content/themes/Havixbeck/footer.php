@@ -121,7 +121,7 @@
 					<div class="footer-bottom">
 						<div class ="footer-bottom-content">
 							<div class="row">
-								<div class="col-xs-12 col-sm-12 col-md-4 col-centered">
+								<div class="col-xs-12 col-sm-12 col-md-5 col-centered">
 									<div id="logo">
 										<p> FOLGE UNS: </p>
 									</div>
@@ -138,11 +138,14 @@
 							                	<!--<img id="footer-yt" src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube_logo.png">-->
 							            </a>
 							        </div>
-								</div><!--class col-->
-								<div class="col-xs-12 col-sm-12 col-md-8 col-centered">
+								<!--</div>--><!--class col-->
+								<!--<div class="col-xs-12 col-sm-12 col-md-8 col-centered">-->
 							        <div id="logo">
-										<span><a href="<?php echo esc_url(get_permalink(get_page_by_title('Impressum'))); ?>">Impressum</a></span>
-										<span>© Hochschule Düsseldorf Entwicklung - 2015</span>
+										<div id="impressum">
+											<span>
+												<a href="<?php echo esc_url(get_permalink(get_page_by_title('Impressum'))); ?>">Impressum</a>
+											</span>
+										</div>
 							        </div>
 								</div><!--class col-->
 							</div>
