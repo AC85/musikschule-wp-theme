@@ -14,7 +14,7 @@
 
     <?php } ?>
 </div>
-<div class="container">
+<div class="container angebot">
 
 
     <div class="row">
@@ -40,9 +40,13 @@
 
             <?php while (have_posts()) : the_post(); ?>
 
-                <h3 class="sub-angebot">
-                    <?php if (!(is_page("Angebot"))) the_title(); ?>
-                </h3>
+                <?php if (!(is_page("Angebot"))){ ?>
+                    <h3 class="sub-angebot">
+                        <?php if (!(is_page("Angebot"))) the_title(); ?>
+                    </h3>
+                <?php }else{ ?>
+                    <div class="sub-angebot-platzhalter"></div>
+                <?php } ?>
                 <div class="content">
                     <?php the_content(); ?>
                 </div>
