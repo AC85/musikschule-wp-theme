@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="breadcrumbs"> <?php if (function_exists('nav_breadcrumb')) nav_breadcrumb(); ?> </div>
     </div>
-    <div class="container">
+    <div class="container ensemble">
         <div class="row">
 
             <!-- Side navigation -->
@@ -40,10 +40,10 @@
                     <div class="row ">
 
                         <div class="
-            col-lg-10
-            col-md-10
-            col-sm-10
-            col-xs-10 ">
+                        col-lg-10
+                        col-md-10
+                        col-sm-10
+                        col-xs-10 ">
 
                             <?php $dozenten_bild = get_field( "ensembles_bild" );
                             if($dozenten_bild != null): ?>

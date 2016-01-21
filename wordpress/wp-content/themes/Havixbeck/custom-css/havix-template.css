@@ -485,3 +485,22 @@ News
 .vorstandsmargin{
     padding-top: 4em;
 }
+
+/*.ensemblepadding,
+.elementarpadding{
+    padding-top:3em;
+}*/
+
+.ensemblepadding .elar_beschreibung p,
+.elementarpadding .elar_beschreibung p{
+    margin-top: 16px;
+}
+
+.ensemble .row .row .row,
+.elementarausbildung .row .row .row{
+    margin-top: 16px;
+}
+
+.sub-angebot-platzhalter{
+    margin-bottom: 80px;
+}
