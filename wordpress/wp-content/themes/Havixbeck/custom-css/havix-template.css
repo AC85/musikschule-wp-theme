@@ -34,11 +34,14 @@ a, li {
     color: #00aeef;
 }
 
+a:hover{
+    cursor:pointer;
+}
+
 
 body, p, span, a, li {
     font-family: 'Raleway', sans-serif;
     line-height: 1.75em;
-
 }
 
 .text-justify {
@@ -63,7 +66,7 @@ img {
 
 .text-on-img {
 
-    color: whitesmoke;
+    color: #f5f5f5;
     z-index: 2;
     left: 0;
     bottom: 30%;
@@ -117,7 +120,7 @@ body .box-link-container {
 
 .box-link-image {
     height: auto;
-    width: 100%;:hover
+    width: 100%;
 }
 
 .box-link-text {
@@ -126,7 +129,6 @@ body .box-link-container {
     color: #000;
     bottom: 0px;
     width: 100%;
-    z-index: 10;
     height: 35px;
     left: 0px;
     right: 15px;
@@ -157,6 +159,7 @@ body .box-link-container {
 .full-width-image-align {
     padding: 0 !important;
     height: auto;
+    margin-bottom: 2em;
 }
 
 .startseite-link-to-page {
@@ -213,6 +216,7 @@ body .box-link-container {
     max-height: 450px;
     width: 100%;
     overflow: hidden;
+    margin-bottom: -2em;
 }
 
 .full-width-image-on-top-start img {
@@ -220,6 +224,10 @@ body .box-link-container {
     height: auto;
     position: relative;
 
+}
+
+.tribe-events-content{
+    margin-top: 8px;
 }
 
 .secondImg img {
@@ -286,7 +294,7 @@ Linke Navigation
 }
 
 .menu-left-container li a:hover, .menu-anmeldung-container li a:hover, #menu-anmeldung li a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /************************
@@ -463,4 +471,9 @@ News
 
 .news-container a {
     color: #2f2f34;
+}
+
+.aktuellesbeitrag h2{
+    text-align: center;
+    margin-top: 40px;
 }

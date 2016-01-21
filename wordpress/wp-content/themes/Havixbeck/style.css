@@ -48,10 +48,20 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
     .innerDiv{
         position: absolute;
         bottom: 0;
+        margin-bottom: -28px;
     }
 
     .full-width-image-on-top-start {
-        max-height: 80vh;
+
+        max-height: 90vh;
+    }
+
+    .full-width-image-on-top-start img{
+        max-width: 1920px;
+        width: 150%;
+        left:-25%;
+
+        height: 80vh;
     }
 
 }
@@ -71,11 +81,23 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
     .innerDiv{
         position: absolute;
         bottom: 0;
+        margin-bottom: -28px;
     }
 
     .full-width-image-on-top-start {
-        height: 900px;
+
+        width:auto;
         max-height: 80vh;
+    }
+
+    .full-width-image-on-top-start img{
+        max-width: 1920px;
+        width: 150%;
+        left:-25%;
+
+        height: auto;
+
+
     }
 
 

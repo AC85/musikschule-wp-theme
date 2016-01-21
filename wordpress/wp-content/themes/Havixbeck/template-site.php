@@ -5,12 +5,17 @@
 ?>
 <?php get_header(); ?>
 
-<?php if (is_page("Organisation")) {
+<?php
+
+if (is_page("Organisation")) {
     get_template_part('templates/organisation');
-} if(is_page("Förderer")) {
+}
+
+if (is_page("Förderer")) {
     get_template_part('templates/foerderer');
 }
-else {
+
+if(!(is_page("Organisation")) && !(is_page("Förderer"))) {
     get_template_part('templates/default-page');
 } ?>
 
