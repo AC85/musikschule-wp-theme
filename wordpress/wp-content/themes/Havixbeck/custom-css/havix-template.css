@@ -477,3 +477,8 @@ News
     text-align: center;
     margin-top: 40px;
 }
+
+.dozentenlist,
+.lettermargin{
+    padding-top: 1em;
+}
